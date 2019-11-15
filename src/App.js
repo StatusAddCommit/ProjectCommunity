@@ -2,6 +2,11 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
+// bootstrap import
+import 'bootstrap/dist/css/bootstrap.min.css';
+// for buttons created in redux-thunk branch
+import { Button } from 'react-bootstrap';
+
 function App() {
   return (
     <div className="App">
