@@ -8,6 +8,10 @@ import reduxThunk from 'redux-thunk';
 
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
+import history from './history';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware, compose } from 'redux';
+import reduxThunk from 'redux-thunk';
 
 import allReducer from './reducers';
 
@@ -31,6 +35,15 @@ import NotFound from './components/404/NotFound';
 import Events from './components/events/Events';
 import Details from './components/details/Details';
 
+import allReducer from './reducers';
+
+const composedEnhancers = compose(
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+  applyMiddleware(reduxThunk)
+);
+
+const store = createStore(allReducer, composedEnhancers);
+
 // static navigation menu
 import Header from './components/Header';
 
@@ -46,6 +59,12 @@ const routing = (
     </Switch>
   </Router>
 );
+
+// ReactDOM.render(
+//   <Provider store={store}>
+//     <App />
+//   </Provider>,
+//   document.getElementById('root')
 
 ReactDOM.render(routing, document.getElementById('root'));
 
