@@ -17,6 +17,7 @@
     "express-http-proxy": "^1.6.0",
     "history": "^4.10.1",
     "jquery": "^3.4.1",
+    "express": "^4.17.1",
     "history": "^4.10.1",
     "node-sass": "^4.13.0",
     "popper": "^1.0.1",
@@ -33,7 +34,7 @@
   },
   "proxy": "http://localhost:8080",
   "scripts": {
-    "start:prod": "npm run build && node server.js",
+    "start:prod": "yarn build && node server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
