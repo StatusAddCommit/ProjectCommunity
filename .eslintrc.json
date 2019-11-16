@@ -8,6 +8,7 @@
     "func-names": "off",
     "object-shorthand": "off",
     "class-methods-use-this": "off",
+    "no-underscore-dangle": "off",
     "react/jsx-filename-extension": "off"
   },
   "env": {
