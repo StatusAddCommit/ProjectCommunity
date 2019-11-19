@@ -6,9 +6,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import AppBody from './AppBody'
+
 ReactDOM.render(
   <Router history={history}>
-    <App />
+    <AppBody />
   </Router>,
   document.getElementById('root')
 );
