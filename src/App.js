@@ -15,11 +15,27 @@ const MainMenu = () => {
         <button type="button">home</button>
       </Link>
       <Link to="/about">
-        <button type="button">About</button>
+        <button type="button">About</button> 
       </Link>
     </div>
   );
 };
+
+// const App = () => {
+//   return (
+//     <Router>
+//       <div className="App">
+//         <header className="App-header">
+//           <MainMenu />
+//         </header>
+//         <div>
+//           <Route exact path="/" component={Home} />
+//           <Route exact path="/about" component={About} />
+//         </div>
+//       </div>
+//     </Router>
+//   );
+// };
 
 const App = () => {
   return (
