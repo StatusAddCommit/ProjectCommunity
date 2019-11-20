@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class SectionCta extends React.Component {
   render() {
@@ -6,7 +6,7 @@ class SectionCta extends React.Component {
       <section
         className="section section-cta parallax"
         style={{
-          backgroundImage: "url(images/temp/slide-5.jpg)"
+          backgroundImage: 'url(images/temp/slide-5.jpg)'
         }}
       >
         <div className="container">

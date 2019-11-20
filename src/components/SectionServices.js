@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-class FlyServices extends React.Component {
+class SectionServices extends React.Component {
   render() {
     return (
       <section className="flex-container fly-services">
@@ -69,4 +69,4 @@ class FlyServices extends React.Component {
   }
 }
 
-export default FlyServices;
+export default SectionServices;

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-class SectionContactUs extends React.Component {
+class SectionContact extends React.Component {
   render() {
     return (
       <section className="section gray">
@@ -77,7 +77,7 @@ class SectionContactUs extends React.Component {
                       className="wpcf7-form-control wpcf7-textarea"
                       id="your-message"
                       placeholder="Type in your message"
-                      defaultValue={""}
+                      defaultValue={''}
                     />
                   </span>
                 </div>
@@ -98,4 +98,4 @@ class SectionContactUs extends React.Component {
   }
 }
 
-export default SectionContactUs;
+export default SectionContact;

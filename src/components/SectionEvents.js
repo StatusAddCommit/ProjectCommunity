@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
+import Event from './Event';
 
-class EventsSection extends React.Component {
+class SectionEvents extends React.Component {
   render() {
     return (
       <section className="section padding-bottom-50">
@@ -19,56 +20,7 @@ class EventsSection extends React.Component {
                 itemScope
                 itemType="http://schema.org/Event"
               >
-                <div className="boxed flip-front">
-                  <a
-                    className="event-media js-wave"
-                    href="event-details.html"
-                    itemProp="url"
-                  >
-                    <img src="images/temp/event-1.jpg" alt itemProp="image" />
-                  </a>
-                  <div className="event-content">
-                    <h3 className="event-title" itemProp="name">
-                      <a href="event-details.html">Here goes the Event Title</a>
-                    </h3>
-                    <div className="event-location">
-                      <a href="#" className="flip-button" itemProp="location">
-                        <i className="material-icons">location_on</i>Mombasa,
-                        Kenya
-                      </a>
-                      <time
-                        className="event-date"
-                        dateTime="2016-12-12T20:11:00"
-                        itemProp="startDate"
-                      >
-                        <i className="material-icons">query_builder</i>12 Dec
-                        2016, 11:00 AM
-                      </time>
-                    </div>
-                    <div className="event-description" itemProp="description">
-                      <p>
-                        At vero eos et accusam et justo duo dolores et ea rebum.
-                        Stet clita kasd gubergren, no sea takimata sanctus est
-                        Lorem ipsum dolor sit amet. Lorem ipsum dolor sit ame.
-                        At vero eos et accusam et justo duo dolores et ea rebum.
-                        Stet clita kasd gubergren, no sea takimata sanctus est
-                        Lorem ipsum dolor sit amet.
-                      </p>
-                    </div>
-                    <div className="event-footer">
-                      <div className="event-buttons">
-                        <a
-                          href="event-details.html"
-                          className="btn btn-transparent btn-icon-left js-wave"
-                          itemProp="url"
-                        >
-                          <i className="material-icons">arrow_forward</i>Learn
-                          More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <Event></Event>
                 <div className="boxed flip-back">
                   <div className="card-map" data-placeholder="waiting for map">
                     <div
@@ -199,4 +151,4 @@ class EventsSection extends React.Component {
   }
 }
 
-export default EventsSection;
+export default SectionEvents;

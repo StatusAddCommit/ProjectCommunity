@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-class FlySliderBanner extends React.Component {
+class SliderBanner extends React.Component {
   render() {
     return (
       <div
@@ -12,7 +12,7 @@ class FlySliderBanner extends React.Component {
           <section
             className="slide"
             style={{
-              backgroundImage: "url(images/temp/slide-1.jpg)"
+              backgroundImage: 'url(images/temp/slide-1.jpg)'
             }}
           >
             <div className="slide-content">
@@ -34,7 +34,7 @@ class FlySliderBanner extends React.Component {
           <section
             className="slide"
             style={{
-              backgroundImage: "url(images/temp/slide-2.jpg)"
+              backgroundImage: 'url(images/temp/slide-2.jpg)'
             }}
           >
             <div className="slide-content">
@@ -56,7 +56,7 @@ class FlySliderBanner extends React.Component {
           <section
             className="slide"
             style={{
-              backgroundImage: "url(images/temp/slide-3.jpg)"
+              backgroundImage: 'url(images/temp/slide-3.jpg)'
             }}
           >
             <div className="slide-content">
@@ -78,7 +78,7 @@ class FlySliderBanner extends React.Component {
           <section
             className="slide"
             style={{
-              backgroundImage: "url(images/temp/slide-4.jpg)"
+              backgroundImage: 'url(images/temp/slide-4.jpg)'
             }}
           >
             <div className="slide-content">
@@ -109,4 +109,4 @@ class FlySliderBanner extends React.Component {
   }
 }
 
-export default FlySliderBanner;
+export default SliderBanner;
