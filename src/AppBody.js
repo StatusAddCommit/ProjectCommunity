@@ -1,41 +1,41 @@
-import React from "react";
-import PageLoader from "./components/PageLoader";
-import Header from "./components/Header";
-import FlySliderBanner from "./components/FlySliderBanner";
-import FlyServices from "./components/FlyServices";
-import CurrentProjects from "./components/CurrentProjects";
-import SectionCta from "./components/SectionCta";
-import EventsSection from "./components/EventsSection";
-import SectionTestimonials from "./components/SectionTestimonials";
-import SectionStats from "./components/SectionStats";
-import SectionRecentPosts from "./components/SectionRecentPosts";
-import SectionContactUs from "./components/SectionContactUs";
-import Footer from "./components/Footer";
+import React from 'react';
+import PageLoader from './components/PageLoader';
+import Header from './components/Header';
+import SliderBanner from './components/SliderBanner';
+import SectionServices from './components/SectionServices';
+import SectionProjects from './components/SectionProjects';
+import SectionCta from './components/SectionCta';
+import SectionEvents from './components/SectionEvents';
+import SectionTestimonials from './components/SectionTestimonials';
+import SectionStats from './components/SectionStats';
+import SectionRecentPosts from './components/SectionRecentPosts';
+import SectionContact from './components/SectionContact';
+import Footer from './components/Footer';
 
 class AppBody extends React.Component {
   render() {
     return (
       <div className="app-body">
         {}
-        <PageLoader></PageLoader>
+        <PageLoader />
         {}
         {}
-        <Header></Header>
+        <Header />
         {}
         {}
-        <FlySliderBanner></FlySliderBanner>
+        <SliderBanner></SliderBanner>
         {}
         {}
-        <FlyServices></FlyServices>
+        <SectionServices></SectionServices>
         {}
         {}
-        <CurrentProjects></CurrentProjects>
+        <SectionProjects></SectionProjects>
         {}
         {}
         <SectionCta></SectionCta>
         {}
         {}
-        <EventsSection></EventsSection>
+        <SectionEvents></SectionEvents>
         {}
         {}
         <SectionTestimonials></SectionTestimonials>
@@ -47,7 +47,7 @@ class AppBody extends React.Component {
         <SectionRecentPosts></SectionRecentPosts>
         {}
         {}
-        <SectionContactUs></SectionContactUs>
+        <SectionContact></SectionContact>
         {}
         {}
         <Footer></Footer>

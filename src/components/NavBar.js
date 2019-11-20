@@ -1,8 +1,8 @@
-import React from "react";
-import NavMenu from "./NavMenu";
-import FormSearchHeader from "./FormSearchHeader";
+import React from 'react';
+import NavMenu from './NavMenu';
+import SearchHeader from './SearchHeader';
 
-class NavigationBar extends React.Component {
+class NavBar extends React.Component {
   render() {
     return (
       <nav
@@ -27,7 +27,7 @@ class NavigationBar extends React.Component {
             <NavMenu></NavMenu>
             {}
             {}
-            <FormSearchHeader></FormSearchHeader>
+            <SearchHeader></SearchHeader>
             {}
           </div>
         </div>
@@ -36,4 +36,4 @@ class NavigationBar extends React.Component {
   }
 }
 
-export default NavigationBar;
+export default NavBar;

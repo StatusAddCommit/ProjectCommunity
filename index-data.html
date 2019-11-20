@@ -47,7 +47,7 @@
 <!-- Header -->
 <header id="header" class="header" data-component="Header" itemscope itemtype="http://schema.org/WPHeader">
 	<!-- Navigation Bar -->
-	<nav class="navigation-bar" data-component="NavigationBar" data-become-sticky="600" data-no-placeholder>
+	<nav class="navigation-bar" data-component="NavBar" data-become-sticky="600" data-no-placeholder>
 		<div class="container">
 			<div class="hamburger"><a href="#"></a></div>
 
@@ -105,7 +105,7 @@
 				<!--/ Dropdown Menu -->
 
 				<!-- Search Form -->
-				<form action="#" class="form-search-header" data-component="FormSearchHeader">
+				<form action="#" class="form-search-header" data-component="SearchHeader">
 					<input type="search" name="site-search" class="form-control" placeholder="search for something" required />
 					<button type="submit" name="site-search-submit" class="form-submit material-icons">search</button>
 				</form>
@@ -118,7 +118,7 @@
 <!--/ Header -->
 
     <!-- Fly Slider -->
-    <div class="fly-slider invisible" data-component="FlySliderBanner" data-rotation-interval="10000" data-rotation-duration="1000">
+    <div class="fly-slider invisible" data-component="SliderBanner" data-rotation-interval="10000" data-rotation-duration="1000">
         <div class="cube">
             <section class="slide" style="background-image: url(images/temp/slide-1.jpg);">
                 <div class="slide-content">
@@ -179,7 +179,7 @@
     <!--/ Fly Slider -->
 
     <!-- Services -->
-    <section class="flex-container fly-services" data-component="FlyServices">
+    <section class="flex-container fly-services" data-component="SectionServices">
         <div class="fly-service">
             <div class="service-content">
                 <i class="material-icons">language</i>
@@ -231,7 +231,7 @@
     <!--/ Services -->
 
     <!-- Current Projects -->
-    <section class="section padding-bottom-70" data-component="CurrentProjects">
+    <section class="section padding-bottom-70" data-component="SectionProjects">
         <div class="section-heading">
             <div class="container">
                 <div class="section-subtitle">what do we do</div>
@@ -243,7 +243,7 @@
             <div class="fly-projects alternate-layout">
                 <!-- Project -->
                 <article class="fly-card fly-project fly-flip-effect vertical" itemscope itemtype="http://schema.org/DonateAction">
-                    <div class="boxed flip-front">
+                    <div class="boxed flip-front" data-component="Project">
                         <a class="project-media js-wave" href="project-details.html" itemprop="url">
                             <img src="images/temp/project-7.jpg" alt="" itemprop="image" />
                             <span class="progress">
@@ -469,7 +469,7 @@
     <!--/ Call To Action -->
 
     <!-- Events -->
-    <section class="section padding-bottom-50" data-component="EventsSection">
+    <section class="section padding-bottom-50" data-component="SectionEvents">
         <div class="section-heading">
             <div class="container">
                 <div class="section-subtitle">UPCOMING EVENTS</div>
@@ -482,7 +482,7 @@
                 <div class="column">
                     <!-- Event -->
                     <article class="fly-card fly-event fly-flip-effect" itemscope itemtype="http://schema.org/Event">
-                        <div class="boxed flip-front">
+                        <div class="boxed flip-front" data-component="Event">
                             <a class="event-media js-wave" href="event-details.html" itemprop="url">
                                 <img src="images/temp/event-1.jpg" alt="" itemprop="image" />
                             </a>
@@ -625,7 +625,7 @@
                         <div class="boxed">
                             <!-- Testimonials Slider -->
                             <div class="testimonials-slider">
-                                <article class="testimonial">
+                                <article class="testimonial" data-component="Testimonial">
                                     <blockquote class="testimonial-quote">
                                         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit dunt ut labore et dolore
                                         magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
@@ -712,7 +712,7 @@
             <div class="fly-articles columns3 flex-container">
                 <div class="column">
                     <!-- Post -->
-                    <article class="fly-card fly-article boxed" itemscope itemtype="http://schema.org/Article">
+                    <article class="fly-card fly-article boxed" itemscope itemtype="http://schema.org/Article" data-component="Post">
                         <div class="boxed">
                             <a class="post-media js-wave" href="blog-details.html" itemprop="url">
                                 <img src="images/temp/post-1.jpg" alt="" itemprop="image" />
@@ -829,7 +829,7 @@
     <!--/ Recent Posts -->
 
     <!-- Contact Us -->
-    <section class="section gray" data-component="SectionContactUs">
+    <section class="section gray" data-component="SectionContact">
         <div class="section-heading">
             <div class="container">
                 <div class="section-subtitle">CONTACT US</div>

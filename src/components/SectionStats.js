@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class SectionStats extends React.Component {
   render() {
@@ -6,7 +6,7 @@ class SectionStats extends React.Component {
       <section
         className="section section-stats parallax"
         style={{
-          backgroundImage: "url(images/temp/slide-6.jpg)"
+          backgroundImage: 'url(images/temp/slide-6.jpg)'
         }}
       >
         <div className="container">

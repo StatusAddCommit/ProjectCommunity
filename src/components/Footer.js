@@ -1,7 +1,7 @@
-import React from "react";
-import WidgetPosts from "./WidgetPosts";
-import WidgetTwitter from "./WidgetTwitter";
-import WidgetGallery from "./WidgetGallery";
+import React from 'react';
+import WidgetPosts from './WidgetPosts';
+import WidgetTwitter from './WidgetTwitter';
+import WidgetGallery from './WidgetGallery';
 
 class Footer extends React.Component {
   render() {
@@ -86,7 +86,7 @@ class Footer extends React.Component {
             {}
             {}
             <div className="footer-copyright">
-              © <span itemProp="copyrightYear">2019</span> by{" "}
+              © <span itemProp="copyrightYear">2019</span> by{' '}
               <a href="#" itemProp="copyrightHolder">
                 Ummah Charity
               </a>

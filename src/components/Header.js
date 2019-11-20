@@ -1,5 +1,5 @@
-import React from "react";
-import NavigationBar from "./NavigationBar";
+import React from 'react';
+import NavBar from './NavBar';
 
 class Header extends React.Component {
   render() {
@@ -11,7 +11,7 @@ class Header extends React.Component {
         itemType="http://schema.org/WPHeader"
       >
         {}
-        <NavigationBar></NavigationBar>
+        <NavBar></NavBar>
         {}
       </header>
     );

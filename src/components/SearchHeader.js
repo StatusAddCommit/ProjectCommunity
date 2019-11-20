@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-class FormSearchHeader extends React.Component {
+class SearchHeader extends React.Component {
   render() {
     return (
       <form action="#" className="form-search-header">
@@ -23,4 +23,4 @@ class FormSearchHeader extends React.Component {
   }
 }
 
-export default FormSearchHeader;
+export default SearchHeader;
