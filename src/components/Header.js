@@ -11,7 +11,7 @@ class Header extends React.Component {
         itemType="http://schema.org/WPHeader"
       >
         {}
-        <NavBar></NavBar>
+        <NavBar />
         {}
       </header>
     );

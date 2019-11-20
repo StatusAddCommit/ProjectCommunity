@@ -2673,9 +2673,9 @@ a.back-to-top:active {
 .btn:active,
 .btn.active,
 .btn.disabled,
-.btn[disabled] {
+/* .btn[disabled] {
   outline: none;
-}
+} */
 .btn.active,
 .btn:active {
   -webkit-box-shadow: none;
@@ -2726,7 +2726,10 @@ a.back-to-top:active {
   line-height: 36px;
   border-width: 0;
 }
-.btn:hover,
+.btn:hover{
+  color: #fff;
+  background-color: #0d905d;
+}
 .btn:active {
   color: #fff;
   background-color: #0d905d;

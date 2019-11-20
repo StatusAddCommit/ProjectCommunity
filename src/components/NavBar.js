@@ -19,15 +19,16 @@ class NavBar extends React.Component {
             <div className="logo">
               <a href="index-2.html">
                 {}
-                Ummah<span>Charity</span>
+                Ummah
+                <span>Charity</span>
               </a>
             </div>
             {}
             {}
-            <NavMenu></NavMenu>
+            <NavMenu />
             {}
             {}
-            <SearchHeader></SearchHeader>
+            <SearchHeader />
             {}
           </div>
         </div>

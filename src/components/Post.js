@@ -14,7 +14,7 @@ class Post extends React.Component {
             href="blog-details.html"
             itemProp="url"
           >
-            <img src="images/temp/post-1.jpg" alt itemProp="image" />
+            <img src="images/temp/post-1.jpg" alt="" itemProp="image" />
           </a>
           <div className="post-content">
             <h3 className="post-title" itemProp="name">
@@ -29,7 +29,8 @@ class Post extends React.Component {
                 12 Dec 2016
               </time>
               <a href="#" className="post-comments">
-                <span itemProp="commentCount">26</span> comments
+                <span itemProp="commentCount">26</span>
+                comments
               </a>
               <span className="post-category" itemProp="keywords">
                 tagged in <a href="#">volunteer</a>

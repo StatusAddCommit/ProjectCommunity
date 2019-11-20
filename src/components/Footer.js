@@ -25,7 +25,8 @@ class Footer extends React.Component {
                   <div className="logo">
                     <a href="index-2.html">
                       {}
-                      Ummah<span>Charity</span>
+                      Ummah
+                      <span>Charity</span>
                     </a>
                   </div>
                   {}
@@ -40,17 +41,17 @@ class Footer extends React.Component {
               </div>
               <div className="col-md-3 col-sm-6">
                 {}
-                <WidgetPosts></WidgetPosts>
+                <WidgetPosts />
                 {}
               </div>
               <div className="col-md-3 col-sm-6">
                 {}
-                <WidgetTwitter></WidgetTwitter>
+                <WidgetTwitter />
                 {}
               </div>
               <div className="col-md-3 col-sm-6">
                 {}
-                <WidgetGallery></WidgetGallery>
+                <WidgetGallery />
                 {}
               </div>
             </div>
@@ -86,7 +87,10 @@ class Footer extends React.Component {
             {}
             {}
             <div className="footer-copyright">
-              © <span itemProp="copyrightYear">2019</span> by{' '}
+              ©
+              <span itemProp="copyrightYear">2019</span>
+              by
+              {' '}
               <a href="#" itemProp="copyrightHolder">
                 Ummah Charity
               </a>
