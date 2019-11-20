@@ -9,7 +9,7 @@ class Event extends React.Component {
           href="event-details.html"
           itemProp="url"
         >
-          <img src="images/temp/event-1.jpg" alt itemProp="image" />
+          <img src="images/temp/event-1.jpg" alt="" itemProp="image" />
         </a>
         <div className="event-content">
           <h3 className="event-title" itemProp="name">
@@ -17,15 +17,16 @@ class Event extends React.Component {
           </h3>
           <div className="event-location">
             <a href="#" className="flip-button" itemProp="location">
-              <i className="material-icons">location_on</i>Mombasa, Kenya
+              <i className="material-icons">location_on</i>
+              Mombasa, Kenya
             </a>
             <time
               className="event-date"
               dateTime="2016-12-12T20:11:00"
               itemProp="startDate"
             >
-              <i className="material-icons">query_builder</i>12 Dec 2016, 11:00
-              AM
+              <i className="material-icons">query_builder</i>
+              12 Dec 2016, 11:00 AM
             </time>
           </div>
           <div className="event-description" itemProp="description">
@@ -44,7 +45,8 @@ class Event extends React.Component {
                 className="btn btn-transparent btn-icon-left js-wave"
                 itemProp="url"
               >
-                <i className="material-icons">arrow_forward</i>Learn More
+                <i className="material-icons">arrow_forward</i>
+                Learn More
               </a>
             </div>
           </div>

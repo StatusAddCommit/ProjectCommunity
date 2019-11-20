@@ -27,7 +27,7 @@ class SectionContact extends React.Component {
                     <input
                       type="text"
                       name="your-name"
-                      defaultValue
+                      defaultValue=""
                       className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                       id="your-name"
                       placeholder="Name"
@@ -43,7 +43,7 @@ class SectionContact extends React.Component {
                     <input
                       type="email"
                       name="your-email"
-                      defaultValue
+                      defaultValue=""
                       className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
                       id="your-email"
                       placeholder="Email Address"
@@ -59,7 +59,7 @@ class SectionContact extends React.Component {
                     <input
                       type="text"
                       name="your-subject"
-                      defaultValue
+                      defaultValue=""
                       className="wpcf7-form-control wpcf7-text"
                       id="your-subject"
                       placeholder="Subject"
@@ -77,7 +77,7 @@ class SectionContact extends React.Component {
                       className="wpcf7-form-control wpcf7-textarea"
                       id="your-message"
                       placeholder="Type in your message"
-                      defaultValue={''}
+                      defaultValue=""
                     />
                   </span>
                 </div>

@@ -9,7 +9,7 @@ class Project extends React.Component {
           href="project-details.html"
           itemProp="url"
         >
-          <img src="images/temp/project-7.jpg" alt itemProp="image" />
+          <img src="images/temp/project-7.jpg" alt="" itemProp="image" />
           <span className="progress">
             <span className="progress-label">0%</span>
             <span className="progress-bar" />
@@ -21,7 +21,8 @@ class Project extends React.Component {
           </h3>
           <div className="project-location">
             <a href="#" className="flip-button" itemProp="location">
-              <i className="material-icons">location_on</i>Mombasa, Kenya
+              <i className="material-icons">location_on</i>
+              Mombasa, Kenya
             </a>
           </div>
           <div className="project-description" itemProp="description">
@@ -37,13 +38,15 @@ class Project extends React.Component {
               <li>
                 <div className="label">raised</div>
                 <div className="value" data-raised={12731}>
-                  <sup>$</sup>12,731
+                  <sup>$</sup>
+                  12,731
                 </div>
               </li>
               <li>
                 <div className="label">goal</div>
                 <div className="value" data-goal={22500} itemProp="target">
-                  <sup>$</sup>22,500
+                  <sup>$</sup>
+                  22,500
                 </div>
               </li>
             </ul>
