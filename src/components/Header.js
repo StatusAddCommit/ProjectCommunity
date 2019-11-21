@@ -23,18 +23,13 @@ class Header extends React.Component {
             <div className="navigation-bar-flex">
               {}
               <div className="logo">
-                <a href="index-2.html">
+                <a href="/">
                   Ummah
                   <span>Charities</span>
                 </a>
               </div>
-              {}
-              {}
               <NavMenu />
-              {}
-              {}
               <SearchHeader />
-              {}
             </div>
           </div>
         </nav>

@@ -27,15 +27,21 @@ ReactDOM.render(
   document.getElementById('root')
 // import App from './App';
 import AppBody from './AppBody';
+import App from './App';
 import About from './components/about/About';
+import NotFound from './components/404/NotFound';
+// static navigation menu
 import Header from './components/Header';
 
 const routing = (
   <Router>
     <Header />
     <Switch>
-      <Route exact path="/" component={AppBody} />
+      <Route path="/" exact component={App} />
       <Route path="/about" component={About} />
+      {/* <Route path="/events" component={Events} /> */}
+      {/* <Route path="/events/:id" component={EventDetails} /> */}
+      <Route component={NotFound} />
     </Switch>
   </Router>
 );

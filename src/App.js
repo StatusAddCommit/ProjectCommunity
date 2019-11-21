@@ -1,56 +1,64 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import './App.css';
+import PageLoader from './components/PageLoader';
+// import Header from './components/Header';  // moved to index.js
+import SliderBanner from './components/SliderBanner';
+import SectionServices from './components/SectionServices';
+import SectionProjects from './components/SectionProjects';
+import SectionCta from './components/SectionCta';
+import SectionEvents from './components/SectionEvents';
+import SectionTestimonials from './components/SectionTestimonials';
+import SectionStats from './components/SectionStats';
+// import SectionRecentPosts from './components/SectionRecentPosts';
+import SectionContact from './components/SectionContact';
+import Footer from './components/Footer';
 
-// bootstrap import
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-const Home = () => <div>Home</div>;
-const About = () => <div>About</div>;
-
-const MainMenu = () => {
-  return (
-    <div>
-      <Link to="/">
-        <button type="button">home</button>
-      </Link>
-      <Link to="/about">
-        <button type="button">About</button> 
-      </Link>
-    </div>
-  );
-};
-
-// const App = () => {
-//   return (
-//     <Router>
-//       <div className="App">
-//         <header className="App-header">
-//           <MainMenu />
-//         </header>
-//         <div>
-//           <Route exact path="/" component={Home} />
-//           <Route exact path="/about" component={About} />
-//         </div>
-//       </div>
-//     </Router>
-//   );
-// };
-
-const App = () => {
-  return (
-    <Router>
-      <div className="App">
-        <header className="App-header">
-          <MainMenu />
-        </header>
-        <div>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-        </div>
+class App extends React.Component {
+  render() {
+    return (
+      <div className="app-body">
+        {}
+        <PageLoader />
+        {}
+        {}
+        {/* <Header /> */}
+        {}
+        {}
+        <SliderBanner />
+        {}
+        {}
+        <SectionServices />
+        {}
+        {}
+        <SectionProjects />
+        {}
+        {}
+        <SectionCta />
+        {}
+        {}
+        <SectionEvents />
+        {}
+        {}
+        <SectionTestimonials />
+        {}
+        {}
+        <SectionStats />
+        {}
+        {}
+        {/* <SectionRecentPosts /> */}
+        {}
+        {}
+        <SectionContact />
+        {/* <a href="/" id="contact">
+          {' '}
+        </a> */}
+        {}
+        {}
+        <Footer />
+        {}
+        {}
       </div>
-    </Router>
-  );
-};
+    );
+  }
+}
 
 export default App;

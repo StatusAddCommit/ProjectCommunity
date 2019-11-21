@@ -17,7 +17,7 @@ const AboutHeader = () => {
       >
         <div className="container">
           <div className="hamburger">
-            <a href="/" />
+            <a href="#" />
           </div>
           <div className="navigation-bar-flex">
             {}

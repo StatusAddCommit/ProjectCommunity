@@ -3,9 +3,9 @@ import React from 'react';
 class SectionContact extends React.Component {
   render() {
     return (
-      <section className="section gray">
+      <section className="section gray" id="contact">
         <div className="section-heading">
-          <div className="container" id="contact">
+          <div className="container">
             <div className="section-subtitle">CONTACT US</div>
             <h2 className="section-title">Get in touch with us</h2>
           </div>
