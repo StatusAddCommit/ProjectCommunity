@@ -567,6 +567,7 @@ jQuery(function($) {
       };
 
       $('[data-become-sticky]').each(function() {
+				// console.log('================xxxx=============>', this);
         $(this).stickyMenu();
       });
     },

@@ -6,7 +6,7 @@ class SectionEvents extends React.Component {
     return (
       <section className="section padding-bottom-50">
         <div className="section-heading">
-          <div className="container">
+          <div className="container" id="events">
             <div className="section-subtitle">UPCOMING EVENTS</div>
             <h2 className="section-title">Events at UmmahCharity</h2>
           </div>

@@ -8,9 +8,11 @@ import * as serviceWorker from './serviceWorker';
 // import App from './App';
 import AppBody from './AppBody';
 import About from './components/about/About';
+import Header from './components/Header';
 
 const routing = (
   <Router>
+    <Header />
     <Switch>
       <Route exact path="/" component={AppBody} />
       <Route path="/about" component={About} />
