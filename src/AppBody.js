@@ -20,7 +20,7 @@ class AppBody extends React.Component {
         <PageLoader />
         {}
         {}
-        <Header />
+        {/* <Header /> */}
         {}
         {}
         <SliderBanner />
@@ -44,10 +44,13 @@ class AppBody extends React.Component {
         <SectionStats />
         {}
         {}
-        <SectionRecentPosts />
+        {/* <SectionRecentPosts /> */}
         {}
         {}
         <SectionContact />
+        {/* <a href="/" id="contact">
+          {' '}
+        </a> */}
         {}
         {}
         <Footer />

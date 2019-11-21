@@ -1,5 +1,6 @@
 import React from 'react';
-import NavBar from './NavBar';
+import NavMenu from './NavMenu';
+import SearchHeader from './SearchHeader';
 
 class Header extends React.Component {
   render() {
@@ -10,9 +11,33 @@ class Header extends React.Component {
         itemScope
         itemType="http://schema.org/WPHeader"
       >
-        {}
-        <NavBar />
-        {}
+        <nav
+          className="navigation-bar"
+          data-become-sticky={100}
+          data-no-placeholder
+        >
+          <div className="container">
+            <div className="hamburger">
+              <a href="#" />
+            </div>
+            <div className="navigation-bar-flex">
+              {}
+              <div className="logo">
+                <a href="index-2.html">
+                  Ummah
+                  <span>Charities</span>
+                </a>
+              </div>
+              {}
+              {}
+              <NavMenu />
+              {}
+              {}
+              <SearchHeader />
+              {}
+            </div>
+          </div>
+        </nav>
       </header>
     );
   }

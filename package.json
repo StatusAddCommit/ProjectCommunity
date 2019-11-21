@@ -19,6 +19,7 @@
     "jquery": "^3.4.1",
     "express": "^4.17.1",
     "history": "^4.10.1",
+    "jquery": "^3.4.1",
     "node-sass": "^4.13.0",
     "popper": "^1.0.1",
     "popper.js": "^1.14.7",

@@ -1,6 +1,6 @@
 import React from 'react';
 // import PageLoader from '../PageLoader';
-import AboutHeader from './AboutHeader';
+// import AboutHeader from './AboutHeader';
 import AboutSectionTeam from './AboutSectionTeam';
 import AboutMissionTimeline from './AboutMissionTimeline';
 import Footer from '../Footer';
@@ -9,22 +9,8 @@ class About extends React.Component {
   render() {
     return (
       <div>
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-WPWGNL"
-            height="0"
-            width="0"
-            style="display:none;visibility:hidden"
-          ></iframe>
-        </noscript>
-        {}
-        {}
         {/* <PageLoader /> */}
-        {}
-        {}
-        <AboutHeader />
-        {}
-        {}
+        {/* <AboutHeader /> */}
         <section
           className="fly-header parallax overlay"
           style={{
