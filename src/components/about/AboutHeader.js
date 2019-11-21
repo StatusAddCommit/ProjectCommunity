@@ -24,7 +24,7 @@ class AboutHeader extends React.Component {
             <div className="navigation-bar-flex">
               {}
               <div className="logo">
-                <a href="index-2.html">
+                <a href="/">
                   {}
                   Ummah
                   <span>Charity</span>
@@ -32,10 +32,10 @@ class AboutHeader extends React.Component {
               </div>
               {}
               {}
-              <AboutNavMenu></AboutNavMenu>
+              <AboutNavMenu />
               {}
               {}
-              <AboutSearchHeader></AboutSearchHeader>
+              <AboutSearchHeader />
               {}
               {}
             </div>

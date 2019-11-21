@@ -23,34 +23,34 @@ class AppBody extends React.Component {
         <Header />
         {}
         {}
-        <SliderBanner></SliderBanner>
+        <SliderBanner />
         {}
         {}
-        <SectionServices></SectionServices>
+        <SectionServices />
         {}
         {}
-        <SectionProjects></SectionProjects>
+        <SectionProjects />
         {}
         {}
-        <SectionCta></SectionCta>
+        <SectionCta />
         {}
         {}
-        <SectionEvents></SectionEvents>
+        <SectionEvents />
         {}
         {}
-        <SectionTestimonials></SectionTestimonials>
+        <SectionTestimonials />
         {}
         {}
-        <SectionStats></SectionStats>
+        <SectionStats />
         {}
         {}
-        <SectionRecentPosts></SectionRecentPosts>
+        <SectionRecentPosts />
         {}
         {}
-        <SectionContact></SectionContact>
+        <SectionContact />
         {}
         {}
-        <Footer></Footer>
+        <Footer />
         {}
         {}
       </div>
