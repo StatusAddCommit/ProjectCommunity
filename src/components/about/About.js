@@ -1,28 +1,28 @@
 import React from 'react';
-import AboutPageLoader from './AboutPageLoader';
+// import PageLoader from '../PageLoader';
 import AboutHeader from './AboutHeader';
 import AboutSectionTeam from './AboutSectionTeam';
 import AboutMissionTimeline from './AboutMissionTimeline';
-import AboutFooter from './AboutFooter';
+import Footer from '../Footer';
 
 class About extends React.Component {
   render() {
     return (
       <div>
-        {/* <noscript>
+        <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-WPWGNL"
             height="0"
             width="0"
             style="display:none;visibility:hidden"
           ></iframe>
-        </noscript> */}
+        </noscript>
         {}
         {}
-        <AboutPageLoader></AboutPageLoader>
+        {/* <PageLoader /> */}
         {}
         {}
-        <AboutHeader></AboutHeader>
+        <AboutHeader />
         {}
         {}
         <section
@@ -38,13 +38,13 @@ class About extends React.Component {
         </section>
         {}
         {}
-        <AboutSectionTeam></AboutSectionTeam>
+        <AboutSectionTeam />
         {}
         {}
-        <AboutMissionTimeline></AboutMissionTimeline>
+        <AboutMissionTimeline />
         {}
         {}
-        <AboutFooter></AboutFooter>
+        <Footer />
         {}
       </div>
     );

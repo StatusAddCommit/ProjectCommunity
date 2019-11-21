@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 class NavMenu extends React.Component {
   render() {
@@ -12,7 +13,8 @@ class NavMenu extends React.Component {
           <a href="#">Home</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <Link to="/about">About</Link>
+          {/* <a href="/about">About</a> */}
           <ul>
             <li>
               <a href="#">Mission and Vision</a>
