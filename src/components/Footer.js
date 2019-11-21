@@ -26,7 +26,7 @@ class Footer extends React.Component {
                     <a href="index-2.html">
                       {}
                       Ummah
-                      <span>Charity</span>
+                      <span>Charities</span>
                     </a>
                   </div>
                   {}
@@ -84,18 +84,16 @@ class Footer extends React.Component {
                 <a href="#" className="fa fa-linkedin js-wave" />
               </li>
             </ul>
-            {}
-            {}
             <div className="footer-copyright">
               ©
               <span itemProp="copyrightYear">2019</span>
+              {' '}
               by
               {' '}
-              <a href="#" itemProp="copyrightHolder">
-                Ummah Charity
+              <a href="/" itemProp="copyrightHolder">
+                Ummah Charities
               </a>
             </div>
-            {}
           </div>
         </div>
       </footer>

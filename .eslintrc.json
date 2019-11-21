@@ -9,7 +9,9 @@
     "object-shorthand": "off",
     "class-methods-use-this": "off",
     "react/jsx-filename-extension": "off",
-    "react/prefer-stateless-function": "off"
+    "react/prefer-stateless-function": "off",
+    "jsx-a11y/anchor-has-content": "off",
+    "jsx-a11y/control-has-associated-label": "off"
   },
   "env": {
     "browser": true,

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import { Hashlink as Link } from 'react-router-hash-link';
 
 const NavMenu = () => {
   return (
@@ -9,7 +8,7 @@ const NavMenu = () => {
       itemScope
       itemType="http://schema.org/SiteNavigationElement"
     >
-      {/* TODO: FIX current menu item to display dynamically */}
+      {/* TODO: FIX current menu item to display highlight dynamically */}
       <li className="current-menu-item">
         <a href="/">Home</a>
       </li>
@@ -18,39 +17,50 @@ const NavMenu = () => {
         {/* <a href="/about">About</a> */}
         <ul>
           <li>
-            <a href="#">Mission and Vision</a>
+            <a className="anchor" href="/about#">
+              Mission and Vision
+            </a>
           </li>
           <li>
-            <a href="#">History</a>
+            <a className="anchor" href="/about#history">
+              History
+            </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#">Pillars</a>
-          </li>
+          </li> */}
         </ul>
       </li>
       <li>
-        <a className="anchor" href="#events">Events</a>
+        <a className="anchor" href="#events">
+          Events
+        </a>
+        <ul>
+          <li>
+            <a href="#events">Upcoming Events</a>
+          </li>
+          <li>
+            <a href="#">All Events</a>
+          </li>
+        </ul>
       </li>
       <li>
         <a href="#">How you can help</a>
         <ul>
           <li>
-            <a href="#">Campaigns</a>
+            <a href="/#projects">Current Projects</a>
           </li>
           <li>
-            <a href="#">How to Donate</a>
+            <a href="#">Donate to Our Cause</a>
           </li>
           <li>
-            <a href="#">Volunteering</a>
-          </li>
-          <li>
-            <a href="#">Online Form</a>
+            <a href="#">Volunteer Sign-Up</a>
           </li>
         </ul>
       </li>
       <li>
         <a href="#">Alliance</a>
-        <ul>
+        {/* <ul>
           <li>
             <a href="#">Campaigns</a>
           </li>
@@ -63,24 +73,12 @@ const NavMenu = () => {
           <li>
             <a href="#">Online Form</a>
           </li>
-        </ul>
+        </ul> */}
       </li>
       <li>
-        <a className="anchor" href="#contact">Contact Us</a>
-        <ul>
-          <li>
-            <a href="#">Campaigns</a>
-          </li>
-          <li>
-            <a href="#">How to Donate</a>
-          </li>
-          <li>
-            <a href="#">Volunteering</a>
-          </li>
-          <li>
-            <a href="#">Online Form</a>
-          </li>
-        </ul>
+        <a className="anchor" href="/#contact">
+          Contact Us
+        </a>
       </li>
     </ul>
   );

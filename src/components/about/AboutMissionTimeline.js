@@ -4,16 +4,16 @@ import AboutTimelineItem from './AboutTimelineItem';
 class AboutMissionTimeline extends React.Component {
   render() {
     return (
-      <section className="section padding-top-70">
+      <section className="section padding-top-70" id="history">
         <div className="section-heading">
           <div className="container">
             <div className="section-subtitle">OUR MISSION</div>
-            <h2 className="section-title">Check the company history</h2>
+            <h2 className="section-title">Timeline of Our Organization</h2>
           </div>
         </div>
         <div className="container">
           <div className="fly-timeline">
-            <AboutTimelineItem></AboutTimelineItem>
+            <AboutTimelineItem />
             <div className="timeline-item">
               <div className="date">
                 <span>September</span>
