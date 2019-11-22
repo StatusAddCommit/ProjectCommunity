@@ -8,7 +8,7 @@ class SectionEvents extends React.Component {
         <div className="section-heading">
           <div className="container">
             <div className="section-subtitle">UPCOMING EVENTS</div>
-            <h2 className="section-title">Events at UmmahCharity</h2>
+            <h2 className="section-title">Events at UmmaCharity</h2>
           </div>
         </div>
         <div className="container">
@@ -27,7 +27,7 @@ class SectionEvents extends React.Component {
                       className="google-map"
                       data-map-zoom={14}
                       data-map-type="roadmap"
-                      data-map-style="UmmahCharity"
+                      data-map-style="UmmaCharity"
                       data-map-address="Los Angeles, CA 90033"
                       data-map-marker="images/marker.png"
                       data-map-marker-size="[31,46]"
@@ -117,7 +117,7 @@ class SectionEvents extends React.Component {
                       className="google-map"
                       data-map-zoom={14}
                       data-map-type="roadmap"
-                      data-map-style="UmmahCharity"
+                      data-map-style="UmmaCharity"
                       data-map-addresdata-map-address="1998 Hulman Blvd, Speedway, IN, 46222"
                       data-map-marker="images/marker.png"
                       data-map-marker-size="[31,46]"

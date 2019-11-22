@@ -24,7 +24,7 @@ class Header extends React.Component {
               {}
               <div className="logo">
                 <a href="/">
-                  Ummah
+                  Umma
                   <span>Charities</span>
                 </a>
               </div>

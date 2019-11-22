@@ -7,7 +7,7 @@ class WidgetTwitter extends React.Component {
         <h4 className="widget-title">twitter feed</h4>
         <article className="tweet">
           <a href="#" className="tweet-link">
-            @UmmahCharity consetetur sadipscing elitr, sed diam nonumy...
+            @UmmaCharity consetetur sadipscing elitr, sed diam nonumy...
           </a>
           <time className="tweet-date" dateTime="2016-12-11T20:08:44">
             # 2 hours ago
@@ -15,7 +15,7 @@ class WidgetTwitter extends React.Component {
         </article>
         <article className="tweet">
           <a href="#" className="tweet-link">
-            Duis autem vel eum iriure @UmmahCharity dolor in hendrerit in
+            Duis autem vel eum iriure @UmmaCharity dolor in hendrerit in
             vulputate...
           </a>
           <time className="tweet-date" dateTime="2016-12-11T20:08:44">

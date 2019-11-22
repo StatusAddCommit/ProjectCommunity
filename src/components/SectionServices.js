@@ -1,4 +1,7 @@
 import React from 'react';
+import messages from '../constants/messages';
+
+const { home } = messages;
 
 class SectionServices extends React.Component {
   render() {
@@ -6,61 +9,49 @@ class SectionServices extends React.Component {
       <section className="flex-container fly-services">
         <div className="fly-service">
           <div className="service-content">
-            <i className="material-icons">language</i>
-            <h3 className="title">Spread The Word</h3>
-            <div className="description">
-              Ut wisi enim ad minim veniam, quis nostrud exerci tation
-              ullamcorper
-            </div>
+            <i className="material-icons">{home.ServicesIcon1}</i>
+            <h3 className="title">{home.ServicesTitle1}</h3>
+            <div className="description">{home.ServicesDesc1}</div>
           </div>
           <div className="service-buttons">
             <a href="#" className="btn btn-medium js-wave">
-              READ MORE
+              {home.ServicesBtn1}
             </a>
           </div>
         </div>
         <div className="fly-service">
           <div className="service-content">
-            <i className="material-icons">face</i>
-            <h3 className="title">Make Donations</h3>
-            <div className="description">
-              Ut wisi enim ad minim veniam, quis nostrud exerci tation
-              ullamcorper
-            </div>
+            <i className="material-icons">{home.ServicesIcon2}</i>
+            <h3 className="title">{home.ServicesTitle2}</h3>
+            <div className="description">{home.ServicesDesc2}</div>
           </div>
           <div className="service-buttons">
             <a href="#" className="btn btn-medium js-wave">
-              READ MORE
+              {home.ServicesBtn2}
             </a>
           </div>
         </div>
         <div className="fly-service">
           <div className="service-content">
-            <i className="material-icons">favorite_border</i>
-            <h3 className="title">Make People Happy</h3>
-            <div className="description">
-              Ut wisi enim ad minim veniam, quis nostrud exerci tation
-              ullamcorper
-            </div>
+            <i className="material-icons">{home.ServicesIcon3}</i>
+            <h3 className="title">{home.ServicesTitle3}</h3>
+            <div className="description">{home.ServicesDesc3}</div>
           </div>
           <div className="service-buttons">
             <a href="#" className="btn btn-medium js-wave">
-              READ MORE
+              {home.ServicesBtn3}
             </a>
           </div>
         </div>
         <div className="fly-service">
           <div className="service-content">
-            <i className="material-icons">supervisor_account</i>
-            <h3 className="title">Volunteer Now</h3>
-            <div className="description">
-              Ut wisi enim ad minim veniam, quis nostrud exerci tation
-              ullamcorper
-            </div>
+            <i className="material-icons">{home.ServicesIcon4}</i>
+            <h3 className="title">{home.ServicesTitle4}</h3>
+            <div className="description">{home.ServicesDesc4}</div>
           </div>
           <div className="service-buttons">
             <a href="#" className="btn btn-medium js-wave">
-              READ MORE
+              {home.ServicesBtn4}
             </a>
           </div>
         </div>

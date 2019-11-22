@@ -12,7 +12,7 @@ class SectionTestimonials extends React.Component {
       >
         <div className="section-heading">
           <div className="container">
-            <div className="section-subtitle">SUPPORTER TESTIMNOIALS</div>
+            <div className="section-subtitle">COMMUNITY TESTIMONIALS</div>
             <h2 className="section-title">What others say about us</h2>
           </div>
         </div>

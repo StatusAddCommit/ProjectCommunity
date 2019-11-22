@@ -24,7 +24,7 @@ const AboutHeader = () => {
             <div className="logo">
               <a href="/">
                 {}
-                Ummah
+                Umma
                 <span>Charity</span>
               </a>
             </div>
