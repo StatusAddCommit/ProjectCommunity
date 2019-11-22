@@ -1,6 +1,5 @@
 import React from 'react';
 import PageLoader from './components/PageLoader';
-// import Header from './components/Header';  // moved to index.js
 import SliderBanner from './components/SliderBanner';
 import SectionServices from './components/SectionServices';
 import SectionProjects from './components/SectionProjects';
@@ -17,7 +16,6 @@ class App extends React.Component {
     return (
       <div className="app-body">
         <PageLoader />
-        {/* <Header /> */}
         <SliderBanner />
         <SectionServices />
         <SectionProjects />
