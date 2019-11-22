@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 class DetailsWidgetText extends React.Component {
   render() {
     return (
       <div className="widget-sidebar widget_text">
-        <h4 className="widget-title">Text block</h4>
+        <h4 className="widget-title">About Our Events</h4>
         <div className="textwidget">
           <p>
             Nam liber tempor cum soluta nobis eleifend option congue nihil

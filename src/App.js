@@ -16,46 +16,18 @@ class App extends React.Component {
   render() {
     return (
       <div className="app-body">
-        {}
         <PageLoader />
-        {}
-        {}
         {/* <Header /> */}
-        {}
-        {}
         <SliderBanner />
-        {}
-        {}
         <SectionServices />
-        {}
-        {}
         <SectionProjects />
-        {}
-        {}
         <SectionCta />
-        {}
-        {}
         <SectionEvents />
-        {}
-        {}
         <SectionTestimonials />
-        {}
-        {}
         <SectionStats />
-        {}
-        {}
         {/* <SectionRecentPosts /> */}
-        {}
-        {}
         <SectionContact />
-        {/* <a href="/" id="contact">
-          {' '}
-        </a> */}
-        {}
-        {}
         <Footer />
-        {}
-        {}
       </div>
     );
   }

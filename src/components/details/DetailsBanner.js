@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class DetailsBanner extends React.Component {
   render() {
@@ -6,7 +6,7 @@ class DetailsBanner extends React.Component {
       <section
         className="fly-header parallax overlay"
         style={{
-          backgroundImage: "url(images/temp/slide-16.jpg)"
+          backgroundImage: 'url(images/temp/slide-16.jpg)'
         }}
       >
         <div className="fly-header-content">

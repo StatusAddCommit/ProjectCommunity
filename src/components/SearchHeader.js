@@ -1,10 +1,10 @@
 import React from 'react';
 
-class SearchHeader extends React.Component {
-  render() {
-    return (
-      <form action="#" className="form-search-header">
-        <input
+// search bar is currently a space placeholder; DO NOT REMOVE!
+const SearchHeader = () => {
+  return (
+    <form action="#" className="form-search-header">
+      {/* <input
           type="search"
           name="site-search"
           className="form-control"
@@ -17,10 +17,9 @@ class SearchHeader extends React.Component {
           className="form-submit material-icons"
         >
           search
-        </button>
-      </form>
-    );
-  }
-}
+        </button> */}
+    </form>
+  );
+};
 
 export default SearchHeader;

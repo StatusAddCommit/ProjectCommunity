@@ -1,38 +1,19 @@
-import React from "react";
-import EventsPageLoader from "./EventsPageLoader";
-import EventsHeader from "./EventsHeader";
-import EventsBanner from "./EventsBanner";
-import EventsSection from "./EventsSection";
-import EventsFooter from "./EventsFooter";
+import React from 'react';
+import EventsBanner from './EventsBanner';
+import EventsSection from './EventsSection';
+import Footer from '../Footer';
 
 class Events extends React.Component {
   render() {
     return (
       <div>
-        {}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-WPWGNL"
-            height="0"
-            width="0"
-            style="display:none;visibility:hidden"
-          ></iframe>
-        </noscript>
+        <EventsBanner />
         {}
         {}
-        <EventsPageLoader></EventsPageLoader>
+        <EventsSection />
         {}
         {}
-        <EventsHeader></EventsHeader>
-        {}
-        {}
-        <EventsBanner></EventsBanner>
-        {}
-        {}
-        <EventsSection></EventsSection>
-        {}
-        {}
-        <EventsFooter></EventsFooter>
+        <Footer />
         {}
       </div>
     );

@@ -4,10 +4,10 @@ import Project from './Project';
 class SectionProjects extends React.Component {
   render() {
     return (
-      <section className="section padding-bottom-70">
+      <section className="section padding-bottom-70" id="projects">
         <div className="section-heading">
           <div className="container">
-            <div className="section-subtitle">what do we do</div>
+            <div className="section-subtitle">WHAT WE ARE UP TO</div>
             <h2 className="section-title">Current Projects</h2>
           </div>
         </div>
@@ -19,7 +19,7 @@ class SectionProjects extends React.Component {
               itemScope
               itemType="http://schema.org/DonateAction"
             >
-              <Project></Project>
+              <Project />
               <div className="boxed flip-back">
                 <div className="card-map" data-placeholder="waiting for map">
                   <div
