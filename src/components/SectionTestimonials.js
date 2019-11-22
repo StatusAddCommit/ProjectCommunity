@@ -35,14 +35,13 @@ class SectionTestimonials extends React.Component {
                       </blockquote>
                       <div className="testimonial-author">
                         <div className="avatar">
-                          <img src="images/temp/avatar-2.jpg" alt />
+                          <img src="images/temp/avatar-2.jpg" alt="" />
                         </div>
                         <div className="name">Jack Bourne</div>
                         <div className="job">Manager</div>
                       </div>
                     </article>
                   </div>
-                  {}
                 </div>
               </div>
             </div>

@@ -14,8 +14,4 @@ app.get('*', (req, res) =>
   res.sendFile(path.join(__dirname, 'build', 'index.html'))
 );
 
-app.get('/', (req, res) => {
-  res.send('TESTING123');
-});
-
 app.listen(PORT, HOST, err => console.warn(err || `Listening on ${PORT}`));

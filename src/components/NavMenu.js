@@ -4,15 +4,13 @@ import { Link } from 'react-router-dom';
 class NavMenu extends React.Component {
   constructor(props) {
     super(props);
+    const { location: { pathname = '' } = {} } = window;
     this.state = {
-      currentPage: 'home'
+      currentPage: pathname.split('/')[1] || 'home'
     };
   }
 
   setCurrentPage = page => {
-    // TODO: grab current url path dynamically with: window.location.href.split('/')[3]
-    // problem: window.location.href provides current path before navigating
-    // solution: use alternative to onClick
     this.setState(() => ({
       currentPage: page
     }));
@@ -26,7 +24,6 @@ class NavMenu extends React.Component {
         itemScope
         itemType="http://schema.org/SiteNavigationElement"
       >
-        {/* TODO: Set current menu item to display highlight dynamically (setState?) */}
         <li className={currentPage === 'home' ? 'current-menu-item' : ''}>
           <a href="/">Home</a>
         </li>
@@ -129,23 +126,6 @@ class NavMenu extends React.Component {
             </li>
           </ul>
         </li>
-        {/* <li>
-        <a href="#">Alliance</a>
-        <ul>
-          <li>
-            <a href="#">Campaigns</a>
-          </li>
-          <li>
-            <a href="#">How to Donate</a>
-          </li>
-          <li>
-            <a href="#">Volunteering</a>
-          </li>
-          <li>
-            <a href="#">Online Form</a>
-          </li>
-        </ul>
-      </li> */}
         <li>
           <a
             className="anchor"

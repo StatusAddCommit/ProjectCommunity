@@ -94,7 +94,8 @@ class SectionProjects extends React.Component {
                       <li>
                         <div className="label">raised</div>
                         <div className="value" data-raised={26456}>
-                          <sup>$</sup>26,456
+                          <sup>$</sup>
+                          26,456
                         </div>
                       </li>
                       <li>
@@ -104,7 +105,8 @@ class SectionProjects extends React.Component {
                           data-goal={25000}
                           itemProp="target"
                         >
-                          <sup>$</sup>25,000
+                          <sup>$</sup>
+                          25,000
                         </div>
                       </li>
                     </ul>
@@ -176,8 +178,8 @@ class SectionProjects extends React.Component {
                   </h3>
                   <div className="project-location">
                     <a href="#" className="flip-button" itemProp="location">
-                      <i className="material-icons">location_on</i>Mombasa,
-                      Kenya
+                      <i className="material-icons">location_on</i>
+                      Mombasa, Kenya
                     </a>
                   </div>
                   <div className="project-description" itemProp="description">
@@ -194,7 +196,8 @@ class SectionProjects extends React.Component {
                       <li>
                         <div className="label">raised</div>
                         <div className="value" data-raised={8345}>
-                          <sup>$</sup>8,345
+                          <sup>$</sup>
+                          8,345
                         </div>
                       </li>
                       <li>
@@ -204,7 +207,8 @@ class SectionProjects extends React.Component {
                           data-goal={24500}
                           itemProp="target"
                         >
-                          <sup>$</sup>24,500
+                          <sup>$</sup>
+                          24,500
                         </div>
                       </li>
                     </ul>

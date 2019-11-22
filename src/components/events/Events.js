@@ -8,13 +8,8 @@ class Events extends React.Component {
     return (
       <div>
         <EventsBanner />
-        {}
-        {}
         <EventsSection />
-        {}
-        {}
         <Footer />
-        {}
       </div>
     );
   }
