@@ -1,4 +1,7 @@
 import React from 'react';
+import messages from '../constants/messages';
+
+const { home } = messages;
 
 const SliderBanner = () => {
   return (
@@ -11,88 +14,72 @@ const SliderBanner = () => {
         <section
           className="slide"
           style={{
-            backgroundImage: 'url(images/temp/slide-1.jpg)'
+            backgroundImage: `url(${home.BannerImg1})`
           }}
         >
           <div className="slide-content">
-            <h1 className="page-title">Helping Hands for Everyone</h1>
-            <div className="page-subtitle">
-              Choose the way to help people in need
-            </div>
+            <h1 className="page-title">{home.BannerTitle1}</h1>
+            <div className="page-subtitle">{home.BannerSub1}</div>
             <div className="volunteer-cta">
               <a href="#" className="btn btn-large btn-icon js-wave">
                 <i className="material-icons">arrow_forward</i>
-                BECOME A VOLUNTEER TODAY
+                {home.BannerBtn1}
               </a>
-              <div className="note">
-                no credit card needed / secure payments
-              </div>
+              <div className="note">{home.BannerBtnSub1}</div>
             </div>
           </div>
         </section>
         <section
           className="slide"
           style={{
-            backgroundImage: 'url(images/temp/slide-2.jpg)'
+            backgroundImage: `url(${home.BannerImg2})`
           }}
         >
           <div className="slide-content">
-            <h2 className="page-title">Helping Hands for Everyone</h2>
-            <div className="page-subtitle">
-              Choose the way to help people in need
-            </div>
+            <h2 className="page-title">{home.BannerTitle2}</h2>
+            <div className="page-subtitle">{home.BannerSub2}</div>
             <div className="volunteer-cta">
               <a href="#" className="btn btn-large btn-icon js-wave">
                 <i className="material-icons">arrow_forward</i>
-                BECOME A VOLUNTEER TODAY
+                {home.BannerBtn2}
               </a>
-              <div className="note">
-                no credit card needed / secure payments
-              </div>
+              <div className="note">{home.BannerBtnSub2}</div>
             </div>
           </div>
         </section>
         <section
           className="slide"
           style={{
-            backgroundImage: 'url(images/temp/slide-3.jpg)'
+            backgroundImage: `url(${home.BannerImg3})`
           }}
         >
           <div className="slide-content">
-            <h2 className="page-title">Helping Hands for Everyone</h2>
-            <div className="page-subtitle">
-              Choose the way to help people in need
-            </div>
+            <h2 className="page-title">{home.BannerTitle3}</h2>
+            <div className="page-subtitle">{home.BannerSub3}</div>
             <div className="volunteer-cta">
               <a href="#" className="btn btn-large btn-icon js-wave">
                 <i className="material-icons">arrow_forward</i>
-                BECOME A VOLUNTEER TODAY
+                {home.BannerBtn3}
               </a>
-              <div className="note">
-                no credit card needed / secure payments
-              </div>
+              <div className="note">{home.BannerBtnSub3}</div>
             </div>
           </div>
         </section>
         <section
           className="slide"
           style={{
-            backgroundImage: 'url(images/temp/slide-4.jpg)'
+            backgroundImage: `url(${home.BannerImg4})`
           }}
         >
           <div className="slide-content">
-            <h2 className="page-title">Helping Hands for Everyone</h2>
-            <div className="page-subtitle">
-              Choose the way to help people in need
-            </div>
+            <h2 className="page-title">{home.BannerTitle4}</h2>
+            <div className="page-subtitle">{home.BannerSub4}</div>
             <div className="volunteer-cta">
               <a href="#" className="btn btn-large btn-icon js-wave">
                 <i className="material-icons">arrow_forward</i>
-                BECOME A VOLUNTEER TODAY
+                {home.BannerBtn4}
               </a>
-              <div className="note">
-                no credit card needed / secure payments
-              </div>
+              <div className="note">{home.BannerBtnSub4}</div>
             </div>
           </div>
         </section>

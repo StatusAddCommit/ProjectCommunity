@@ -112,7 +112,7 @@ var googleMapStyle_dark = [{
 		"stylers": [{"weight": 0.5}, {"color": "#333333"}]
 	}, {"featureType": "transit.station", "elementType": "labels.icon", "stylers": [{"gamma": 1}, {"saturation": 50}]}],
 
-	googleMapStyle_UmmahCharity = [{"featureType":"poi.business","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","elementType":"labels.icon","stylers":[{"visibility":"on"}]}];
+	googleMapStyle_UmmaCharity = [{"featureType":"poi.business","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","elementType":"labels.icon","stylers":[{"visibility":"on"}]}];
 
 
 

@@ -1,4 +1,7 @@
 import React from 'react';
+import messages from '../constants/messages';
+
+const { home } = messages;
 
 class SectionCta extends React.Component {
   render() {
@@ -10,12 +13,10 @@ class SectionCta extends React.Component {
         }}
       >
         <div className="container">
-          <h2 className="section-title">We help people in need</h2>
-          <div className="section-subtitle">
-            Become a volunteer and help others
-          </div>
+          <h2 className="section-title">{home.CtaTitle}</h2>
+          <div className="section-subtitle">{home.CtaSub}</div>
           <a href="#" className="btn btn-medium btn-yellow js-wave">
-            SIGN UP TODAY
+            {home.CtaBtn}
           </a>
         </div>
       </section>

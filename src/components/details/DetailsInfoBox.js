@@ -50,7 +50,7 @@ class DetailsInfoBox extends React.Component {
               className="google-map"
               data-map-zoom={14}
               data-map-type="roadmap"
-              data-map-style="UmmahCharity"
+              data-map-style="UmmaCharity"
               data-map-address="1998 Hulman Blvd, Speedway, IN, 46222"
               data-map-marker="images/marker.png"
               data-map-marker-size="[31,46]"
