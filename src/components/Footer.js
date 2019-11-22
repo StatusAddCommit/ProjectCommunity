@@ -24,7 +24,7 @@ class Footer extends React.Component {
                 <div className="widget-footer">
                   <div className="logo">
                     <a href="index-2.html">
-                      Ummah
+                      Umma
                       <span>Charities</span>
                     </a>
                   </div>
@@ -63,7 +63,7 @@ class Footer extends React.Component {
                 {' by '}
               </span>
               <a href="/" itemProp="copyrightHolder">
-                Ummah Charities
+                Umma Charities
               </a>
             </div>
           </div>
