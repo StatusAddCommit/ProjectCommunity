@@ -55,10 +55,26 @@ const messages = {
       'Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper',
     ServicesBtn4: 'VOLUNTEER',
 
-    // SectionCta title/subtitle/button title
+    // SectionCta background image/title/subtitle/button title
+    CtaImg: 'images/temp/slide-5.jpg',
     CtaTitle: 'We help people in need',
     CtaSub: 'Become a volunteer and help others',
-    CtaBtn: 'SIGN UP TODAY'
+    CtaBtn: 'SIGN UP TODAY',
+
+    // SectionStats background image/title/statistics
+    StatsImg: 'images/temp/slide-6.jpg',
+
+    StatsTitle1: 'DONATIONS MADE',
+    StatsNumber1: '91524',
+
+    StatsTitle2: 'LITERS OF WATER PROVIDED',
+    StatsNumber2: '247441',
+
+    StatsTitle3: 'PEOPLE EDUCATED',
+    StatsNumber3: '41390',
+
+    StatsTitle4: 'HOMES BUILT',
+    StatsNumber4: '11317'
   },
 
   footer: {

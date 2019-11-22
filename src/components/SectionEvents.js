@@ -8,7 +8,7 @@ class SectionEvents extends React.Component {
         <div className="section-heading">
           <div className="container">
             <div className="section-subtitle">UPCOMING EVENTS</div>
-            <h2 className="section-title">Events at UmmaCharity</h2>
+            <h2 className="section-title">Events at Umma Charities</h2>
           </div>
         </div>
         <div className="container">
