@@ -4,10 +4,10 @@ import AboutTeamMember from './AboutTeamMember';
 class AboutSectionTeam extends React.Component {
   render() {
     return (
-      <section className="section no-padding-bottom">
+      <section className="section no-padding-bottom" id="team">
         <div className="container">
           <div className="fly-team-members columns4 flex-container">
-            <AboutTeamMember></AboutTeamMember>
+            <AboutTeamMember />
             <div className="column">
               {}
               <div

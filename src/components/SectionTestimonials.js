@@ -12,8 +12,8 @@ class SectionTestimonials extends React.Component {
       >
         <div className="section-heading">
           <div className="container">
-            <div className="section-subtitle">CLIENT TESTIMONAILS</div>
-            <h2 className="section-title">What do others say about us</h2>
+            <div className="section-subtitle">SUPPORTER TESTIMNOIALS</div>
+            <h2 className="section-title">What others say about us</h2>
           </div>
         </div>
         <div className="container">
@@ -23,7 +23,7 @@ class SectionTestimonials extends React.Component {
                 <div className="boxed">
                   {}
                   <div className="testimonials-slider">
-                    <Testimonial></Testimonial>
+                    <Testimonial />
                     <article className="testimonial">
                       <blockquote className="testimonial-quote">
                         Stet clita kasd gubergren, no sea takimata sanctus est

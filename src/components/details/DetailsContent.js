@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class DetailsContent extends React.Component {
   render() {
@@ -73,7 +73,7 @@ class DetailsContent extends React.Component {
           sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
           invidunt ut labore et dolore magna aliquyam erat.
         </p>
-        <img src="images/temp/slide-5.jpg" alt />
+        <img src="images/temp/slide-5.jpg" alt="" />
         <p className="wp-caption-text">This is an image description.</p>
         <p>
           Nam liber tempor cum soluta nobis eleifend option congue nihil

@@ -8,6 +8,9 @@ import * as serviceWorker from './serviceWorker';
 import App from './App';
 import About from './components/about/About';
 import NotFound from './components/404/NotFound';
+import Events from './components/events/Events';
+import Details from './components/details/Details';
+
 // static navigation menu
 import Header from './components/Header';
 
@@ -17,8 +20,8 @@ const routing = (
     <Switch>
       <Route path="/" exact component={App} />
       <Route path="/about" component={About} />
-      {/* <Route path="/events" component={Events} /> */}
-      {/* <Route path="/events/:id" component={EventDetails} /> */}
+      <Route path="/events" component={Events} />
+      <Route path="/event:id" component={Details} />
       <Route component={NotFound} />
     </Switch>
   </Router>

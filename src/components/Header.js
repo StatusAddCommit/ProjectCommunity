@@ -29,7 +29,7 @@ class Header extends React.Component {
                 </a>
               </div>
               <NavMenu />
-              <SearchHeader />
+              {/* <SearchHeader /> */}
             </div>
           </div>
         </nav>

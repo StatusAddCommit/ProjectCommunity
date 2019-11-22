@@ -10,11 +10,13 @@
     "class-methods-use-this": "off",
     "react/jsx-filename-extension": "off",
     "react/prefer-stateless-function": "off",
+    "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/anchor-has-content": "off",
     "jsx-a11y/control-has-associated-label": "off"
   },
   "env": {
     "browser": true,
     "node": true
-  }
+  },
+  "parser": "babel-eslint"
 }

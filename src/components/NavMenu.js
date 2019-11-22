@@ -1,66 +1,137 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const NavMenu = () => {
-  return (
-    <ul
-      className="nav-menu clearfix"
-      itemScope
-      itemType="http://schema.org/SiteNavigationElement"
-    >
-      {/* TODO: FIX current menu item to display highlight dynamically */}
-      <li className="current-menu-item">
-        <a href="/">Home</a>
-      </li>
-      <li>
-        <Link to="/about">About</Link>
-        {/* <a href="/about">About</a> */}
-        <ul>
-          <li>
-            <a className="anchor" href="/about#">
-              Mission and Vision
-            </a>
-          </li>
-          <li>
-            <a className="anchor" href="/about#history">
-              History
-            </a>
-          </li>
-          {/* <li>
-            <a href="#">Pillars</a>
-          </li> */}
-        </ul>
-      </li>
-      <li>
-        <a className="anchor" href="#events">
-          Events
-        </a>
-        <ul>
-          <li>
-            <a href="#events">Upcoming Events</a>
-          </li>
-          <li>
-            <a href="#">All Events</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">How you can help</a>
-        <ul>
-          <li>
-            <a href="/#projects">Current Projects</a>
-          </li>
-          <li>
-            <a href="#">Donate to Our Cause</a>
-          </li>
-          <li>
-            <a href="#">Volunteer Sign-Up</a>
-          </li>
-        </ul>
-      </li>
-      <li>
+class NavMenu extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentPage: 'home'
+    };
+  }
+
+  setCurrentPage = page => {
+    // TODO: grab current url path dynamically with: window.location.href.split('/')[3]
+    // problem: window.location.href provides current path before navigating
+    // solution: use alternative to onClick
+    this.setState(() => ({
+      currentPage: page
+    }));
+  };
+
+  render() {
+    const { currentPage } = this.state;
+    return (
+      <ul
+        className="nav-menu clearfix"
+        itemScope
+        itemType="http://schema.org/SiteNavigationElement"
+      >
+        {/* TODO: Set current menu item to display highlight dynamically (setState?) */}
+        <li className={currentPage === 'home' ? 'current-menu-item' : ''}>
+          <a href="/">Home</a>
+        </li>
+        <li className={currentPage === 'about' ? 'current-menu-item' : ''}>
+          <Link
+            to="/about"
+            onClick={() => {
+              this.setCurrentPage('about');
+            }}
+          >
+            About
+          </Link>
+          <ul>
+            <li>
+              <a
+                className="anchor"
+                href="/about#"
+                onClick={() => {
+                  this.setCurrentPage('about');
+                }}
+              >
+                Mission and Vision
+              </a>
+            </li>
+            <li>
+              <a
+                className="anchor"
+                href="/about#team"
+                onClick={() => {
+                  this.setCurrentPage('about');
+                }}
+              >
+                Team Members
+              </a>
+            </li>
+            <li>
+              <a
+                className="anchor"
+                href="/about#history"
+                onClick={() => {
+                  this.setCurrentPage('about');
+                }}
+              >
+                Our History
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li className={currentPage === 'events' ? 'current-menu-item' : ''}>
+          <Link
+            to="/events"
+            onClick={() => {
+              this.setCurrentPage('events');
+            }}
+          >
+            Events
+          </Link>
+          <ul>
+            <li>
+              <a
+                className="anchor"
+                href="/#events"
+                onClick={() => {
+                  this.setCurrentPage('home');
+                }}
+              >
+                Upcoming Events
+              </a>
+            </li>
+            <li>
+              <Link
+                to="/events"
+                onClick={() => {
+                  this.setCurrentPage('events');
+                }}
+              >
+                All Events
+              </Link>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">How you can help</a>
+          <ul>
+            <li>
+              <a
+                href="/#projects"
+                onClick={() => {
+                  this.setCurrentPage('home');
+                }}
+              >
+                Current Projects
+              </a>
+            </li>
+            <li>
+              <a href="#">Donate to Our Cause</a>
+            </li>
+            <li>
+              <a href="#">Volunteer Sign-Up</a>
+            </li>
+          </ul>
+        </li>
+        {/* <li>
         <a href="#">Alliance</a>
-        {/* <ul>
+        <ul>
           <li>
             <a href="#">Campaigns</a>
           </li>
@@ -73,15 +144,22 @@ const NavMenu = () => {
           <li>
             <a href="#">Online Form</a>
           </li>
-        </ul> */}
-      </li>
-      <li>
-        <a className="anchor" href="/#contact">
-          Contact Us
-        </a>
-      </li>
-    </ul>
-  );
-};
+        </ul>
+      </li> */}
+        <li>
+          <a
+            className="anchor"
+            href="/#contact"
+            onClick={() => {
+              this.setCurrentPage('home');
+            }}
+          >
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    );
+  }
+}
 
 export default NavMenu;
