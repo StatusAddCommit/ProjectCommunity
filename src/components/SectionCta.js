@@ -9,7 +9,7 @@ class SectionCta extends React.Component {
       <section
         className="section section-cta parallax"
         style={{
-          backgroundImage: 'url(images/temp/slide-5.jpg)'
+          backgroundImage: `url(${home.CtaImg})`
         }}
       >
         <div className="container">
