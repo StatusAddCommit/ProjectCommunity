@@ -1,7 +1,7 @@
-import React from "react";
-import DetailsGallery from "./DetailsGallery";
-import DetailsInfoBox from "./DetailsInfoBox";
-import DetailsContent from "./DetailsContent";
+import React from 'react';
+import DetailsGallery from './DetailsGallery';
+import DetailsInfoBox from './DetailsInfoBox';
+import DetailsContent from './DetailsContent';
 
 class DetailsEventDetails extends React.Component {
   render() {
@@ -12,14 +12,9 @@ class DetailsEventDetails extends React.Component {
         itemType="http://schema.org/DonateAction"
         itemRef="projectTitle1"
       >
-        <DetailsGallery></DetailsGallery>
-        {}
-        <DetailsInfoBox></DetailsInfoBox>
-        {}
-        {}
-        <DetailsContent></DetailsContent>
-        {}
-        {}
+        <DetailsGallery />
+        <DetailsInfoBox />
+        <DetailsContent />
         <ul className="post-social clearfix">
           <li>
             <a href="#" className="fa fa-facebook js-wave" />
@@ -30,11 +25,7 @@ class DetailsEventDetails extends React.Component {
           <li>
             <a href="#" className="fa fa-instagram js-wave" />
           </li>
-          <li>
-            <a href="#" className="fa fa-google js-wave" />
-          </li>
         </ul>
-        {}
       </article>
     );
   }

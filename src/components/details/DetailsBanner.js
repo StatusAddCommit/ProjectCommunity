@@ -10,7 +10,7 @@ class DetailsBanner extends React.Component {
         }}
       >
         <div className="fly-header-content">
-          <div className="page-subtitle">Event Single Page</div>
+          <div className="page-subtitle">Event Details</div>
           <h1 id="projectTitle1" className="page-title" itemProp="title">
             Here Goes the Event Title
           </h1>

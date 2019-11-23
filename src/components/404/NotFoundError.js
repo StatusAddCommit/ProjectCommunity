@@ -10,8 +10,10 @@ class NotFoundError extends React.Component {
         }}
       >
         <div className="fly-header-content">
-          <div className="page-subtitle">404</div>
-          <h1 className="page-title">PAGE NOT FOUND</h1>
+          <div className="page-subtitle">
+            Sorry, we cannot find the page You are looking for.
+          </div>
+          <h1 className="page-title">404 - PAGE NOT FOUND</h1>
         </div>
       </section>
     );

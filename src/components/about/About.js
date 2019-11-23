@@ -1,37 +1,30 @@
 import React from 'react';
-// import PageLoader from '../PageLoader';
-// import AboutHeader from './AboutHeader';
 import AboutSectionTeam from './AboutSectionTeam';
 import AboutMissionTimeline from './AboutMissionTimeline';
 import Footer from '../Footer';
+import messages from '../../constants/messages';
+
+const { about } = messages;
 
 class About extends React.Component {
   render() {
     return (
       <div>
-        {/* <PageLoader /> */}
-        {/* <AboutHeader /> */}
         <section
           className="fly-header parallax overlay"
           style={{
-            backgroundImage: 'url(images/temp/slide-25.jpg)'
+            backgroundImage: `url(${about.BannerImg})`
           }}
         >
           <div className="fly-header-content">
-            <div className="page-subtitle">ABOUT OUR COMPANY</div>
-            <h1 className="page-title">Our Mission</h1>
+            <h1 className="page-title">{about.BannerTitle}</h1>
+            <br />
+            <div className="page-subtitle">{about.BannerSub}</div>
           </div>
         </section>
-        {}
-        {}
         <AboutSectionTeam />
-        {}
-        {}
         <AboutMissionTimeline />
-        {}
-        {}
         <Footer />
-        {}
       </div>
     );
   }

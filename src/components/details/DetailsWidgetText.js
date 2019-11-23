@@ -1,4 +1,7 @@
 import React from 'react';
+import messages from '../../constants/messages';
+
+const { eventdetails } = messages;
 
 class DetailsWidgetText extends React.Component {
   render() {
@@ -6,16 +9,7 @@ class DetailsWidgetText extends React.Component {
       <div className="widget-sidebar widget_text">
         <h4 className="widget-title">About Our Events</h4>
         <div className="textwidget">
-          <p>
-            Nam liber tempor cum soluta nobis eleifend option congue nihil
-            imperdiet doming id quod mazim placerat facer possim assum. Lorem
-            ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-            nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-            duo dolores eta.
-          </p>
+          <p>{eventdetails.AboutMsg}</p>
         </div>
       </div>
     );

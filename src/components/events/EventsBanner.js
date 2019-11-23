@@ -1,4 +1,7 @@
-import React from "react";
+import React from 'react';
+import messages from '../../constants/messages';
+
+const { events } = messages;
 
 class EventsBanner extends React.Component {
   render() {
@@ -6,12 +9,12 @@ class EventsBanner extends React.Component {
       <section
         className="fly-header parallax overlay"
         style={{
-          backgroundImage: "url(images/temp/slide-13.jpg)"
+          backgroundImage: `url(${events.BannerImg})`
         }}
       >
         <div className="fly-header-content">
-          <div className="page-subtitle">Upcoming</div>
-          <h1 className="page-title">Events in 2 Columns</h1>
+          <div className="page-subtitle">{events.BannerSub}</div>
+          <h1 className="page-title">{events.BannerTitle}</h1>
         </div>
       </section>
     );

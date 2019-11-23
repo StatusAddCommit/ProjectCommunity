@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class EventsItem extends React.Component {
   render() {
@@ -16,7 +16,7 @@ class EventsItem extends React.Component {
               href="event-details.html"
               itemProp="url"
             >
-              <img src="images/temp/event-1.jpg" alt itemProp="image" />
+              <img src="images/temp/event-1.jpg" alt="" itemProp="image" />
             </a>
             <div className="event-content">
               <h3 className="event-title" itemProp="name">
