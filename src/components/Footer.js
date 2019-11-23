@@ -1,7 +1,4 @@
 import React from 'react';
-// import WidgetPosts from './WidgetPosts';
-// import WidgetTwitter from './WidgetTwitter';
-// import WidgetGallery from './WidgetGallery';
 import messages from '../constants/messages';
 
 const { footer } = messages;
@@ -33,15 +30,6 @@ class Footer extends React.Component {
                   </div>
                 </div>
               </div>
-              {/* <div className="col-md-3 col-sm-6">
-                <WidgetPosts />
-              </div>
-              <div className="col-md-3 col-sm-6">
-                <WidgetTwitter />
-              </div>
-              <div className="col-md-3 col-sm-6">
-                <WidgetGallery />
-              </div> */}
             </div>
           </div>
           <div className="footer-bottom flex-container">

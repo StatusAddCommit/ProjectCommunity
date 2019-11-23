@@ -1,6 +1,6 @@
-import React from "react";
-import EventsItem from "./EventsItem";
-import EventsPagination from "./EventsPagination";
+import React from 'react';
+import EventsItem from './EventsItem';
+import EventsPagination from './EventsPagination';
 
 class EventsSection extends React.Component {
   render() {
@@ -8,7 +8,7 @@ class EventsSection extends React.Component {
       <section className="section">
         <div className="container">
           <div className="fly-events flex-container">
-            <EventsItem></EventsItem>
+            <EventsItem />
             <div className="column">
               {}
               <article

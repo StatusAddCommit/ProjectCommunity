@@ -77,6 +77,29 @@ const messages = {
     StatsNumber4: '11317'
   },
 
+  about: {
+    // About-page banner image/title/subtitle
+    BannerImg: 'images/temp/slide-25.jpg',
+    BannerTitle: 'Our Mission',
+    BannerSub: 'One sentence mission statement here'
+
+    // About-page timeline items
+    // TODO: TBD
+  },
+
+  events: {
+    // Events-page banner image/title/subtitle
+    BannerImg: 'images/temp/slide-13.jpg',
+    BannerTitle: 'Umma Charities Events',
+    BannerSub: 'All ongoing and upcoming'
+  },
+
+  eventdetails: {
+    // Event details page sidebar 'about our events' message
+    AboutMsg:
+      'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores eta.'
+  },
+
   footer: {
     // Footer about message
     about:

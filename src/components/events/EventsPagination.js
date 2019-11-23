@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class EventsPagination extends React.Component {
   render() {
