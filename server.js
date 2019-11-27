@@ -3,8 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const path = require('path');
 
-const { PORT = 3000 } = process.env;
-const HOST = '0.0.0.0';
+const { PORT = 3000, HOST } = process.env;
 
 const app = express();
 

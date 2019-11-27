@@ -1,6 +1,5 @@
 import React from 'react';
 
-// search bar is currently a space placeholder; DO NOT REMOVE!
 const SearchHeader = () => {
   return (
     <form action="#" className="form-search-header">
