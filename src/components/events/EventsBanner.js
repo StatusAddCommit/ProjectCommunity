@@ -3,22 +3,20 @@ import messages from '../../constants/messages';
 
 const { events } = messages;
 
-class EventsBanner extends React.Component {
-  render() {
-    return (
-      <section
-        className="fly-header parallax overlay"
-        style={{
-          backgroundImage: `url(${events.BannerImg})`
-        }}
-      >
-        <div className="fly-header-content">
-          <div className="page-subtitle">{events.BannerSub}</div>
-          <h1 className="page-title">{events.BannerTitle}</h1>
-        </div>
-      </section>
-    );
-  }
-}
+const EventsBanner = () => {
+  return (
+    <section
+      className="fly-header parallax overlay"
+      style={{
+        backgroundImage: `url(${events.BannerImg})`
+      }}
+    >
+      <div className="fly-header-content">
+        <div className="page-subtitle">{events.BannerSub}</div>
+        <h1 className="page-title">{events.BannerTitle}</h1>
+      </div>
+    </section>
+  );
+};
 
 export default EventsBanner;

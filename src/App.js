@@ -10,23 +10,21 @@ import SectionStats from './components/SectionStats';
 import SectionContact from './components/SectionContact';
 import Footer from './components/Footer';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="app-body">
-        <PageLoader />
-        <SliderBanner />
-        <SectionServices />
-        <SectionProjects />
-        <SectionCta />
-        <SectionEvents />
-        <SectionTestimonials />
-        <SectionStats />
-        <SectionContact />
-        <Footer />
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <div className="app-body">
+      <PageLoader />
+      <SliderBanner />
+      <SectionServices />
+      <SectionProjects />
+      <SectionCta />
+      <SectionEvents />
+      <SectionTestimonials />
+      <SectionStats />
+      <SectionContact />
+      <Footer />
+    </div>
+  );
+};
 
 export default App;

@@ -1,8 +1,8 @@
 import React from 'react';
 import Event from './Event';
 
-class SectionEvents extends React.Component {
-  render() {
+const SectionEvents = () => {
+  
     return (
       <section className="section padding-bottom-50" id="events">
         <div className="section-heading">
@@ -20,7 +20,7 @@ class SectionEvents extends React.Component {
                 itemScope
                 itemType="http://schema.org/Event"
               >
-                <Event></Event>
+                <Event />
                 <div className="boxed flip-back">
                   <div className="card-map" data-placeholder="waiting for map">
                     <div
@@ -149,6 +149,5 @@ class SectionEvents extends React.Component {
       </section>
     );
   }
-}
 
 export default SectionEvents;

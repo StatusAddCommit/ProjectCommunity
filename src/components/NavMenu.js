@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class NavMenu extends React.Component {
+class NavMenu extends Component {
   constructor(props) {
     super(props);
     const { location: { pathname = '' } = {} } = window;
