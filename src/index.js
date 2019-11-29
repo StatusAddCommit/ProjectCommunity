@@ -36,14 +36,21 @@ import Events from './components/events/Events';
 import Details from './components/details/Details';
 import Header from './components/Header';
 
-import allReducer from './reducers';
+import allReducers from './reducers';
 
 const composedEnhancers = compose(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
   applyMiddleware(reduxThunk)
 );
 
-const store = createStore(allReducer, composedEnhancers);
+const store = createStore(
+  allReducers,
+  {
+    projects: ['sample product'],
+    events: ['some event']
+  },
+  composedEnhancers
+);
 
 const routing = (
   <Provider store={store}>
