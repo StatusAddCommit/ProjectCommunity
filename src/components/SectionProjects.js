@@ -18,6 +18,7 @@ const SectionProjects = () => {
             itemScope
             itemType="http://schema.org/DonateAction"
           >
+            {/* TODO: map out dynamic projects; delete hardcoded projects */}
             <Project />
             <div className="boxed flip-back">
               <div className="card-map" data-placeholder="waiting for map">
@@ -63,7 +64,7 @@ const SectionProjects = () => {
                 href="project-details.html"
                 itemProp="url"
               >
-                <img src="images/temp/project-8.jpg" alt itemProp="image" />
+                <img src="images/temp/project-8.jpg" alt="" itemProp="image" />
                 <span className="progress">
                   <span className="progress-label">0%</span>
                   <span className="progress-bar" />
@@ -164,7 +165,7 @@ const SectionProjects = () => {
                 href="project-details.html"
                 itemProp="url"
               >
-                <img src="images/temp/project-9.jpg" alt itemProp="image" />
+                <img src="images/temp/project-9.jpg" alt="" itemProp="image" />
                 <span className="progress">
                   <span className="progress-label">0%</span>
                   <span className="progress-bar" />
