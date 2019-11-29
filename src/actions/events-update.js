@@ -1,10 +1,6 @@
-const EVENTS_UPDATE = 'events: eventsUpdate';
-
 const eventsUpdate = newEvent => ({
-  type: EVENTS_UPDATE,
-  payload: {
-    event: newEvent
-  }
+  type: 'EVENTS_UPDATE',
+  payload: newEvent
 });
 
-export default { EVENTS_UPDATE, eventsUpdate };
+export default eventsUpdate;

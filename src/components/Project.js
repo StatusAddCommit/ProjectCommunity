@@ -1,6 +1,4 @@
 import React from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
 
 const Project = () => {
   return (
@@ -66,8 +64,4 @@ const Project = () => {
   );
 };
 
-const mapStateToProps = state => ({
-  projects: state.projects
-});
-
-export default connect(mapStateToProps)(Project);
+export default Project;
