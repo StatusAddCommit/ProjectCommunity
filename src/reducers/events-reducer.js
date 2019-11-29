@@ -1,12 +1,10 @@
-import EVENTS_UPDATE from '../actions/events-update';
-
-export default (state = [], { type, payload }) => {
+const eventsReducer = (state = [], { type, payload }) => {
   switch (type) {
-    case EVENTS_UPDATE:
-      return payload.event;
+    case 'EVENTS_UPDATE':
+      return payload;
     default:
       return state;
   }
 };
 
-// export default eventsReducer;
+export default eventsReducer;

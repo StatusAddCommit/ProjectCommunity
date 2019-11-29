@@ -1,7 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Project from './Project';
 
-const SectionProjects = () => {
+const SectionProjects = props => {
+  const { projects } = props;
+  console.log('=SECTION PROJ====>', projects);
   return (
     <section className="section padding-bottom-70" id="projects">
       <div className="section-heading">
@@ -262,3 +265,7 @@ const SectionProjects = () => {
 };
 
 export default SectionProjects;
+
+SectionProjects.propTypes = {
+  projects: PropTypes.arrayOf.isRequired
+};

@@ -4,6 +4,7 @@ import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import { createStore, applyMiddleware, compose } from 'redux';
 import reduxThunk from 'redux-thunk';
 import { Provider } from 'react-redux';
+import allReducers from './reducers';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -14,21 +15,12 @@ import Events from './components/events/Events';
 import Details from './components/details/Details';
 import Header from './components/Header';
 
-import allReducers from './reducers';
-
 const composedEnhancers = compose(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
   applyMiddleware(reduxThunk)
 );
 
-const store = createStore(
-  allReducers,
-  {
-    projects: ['sample product'],
-    events: ['some event']
-  },
-  composedEnhancers
-);
+const store = createStore(allReducers, composedEnhancers);
 
 const routing = (
   <Provider store={store}>

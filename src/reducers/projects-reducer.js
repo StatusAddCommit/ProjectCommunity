@@ -1,11 +1,10 @@
-export default (state = [], { type, payload }) => {
+const projectsReducer = (state = [], { type, payload }) => {
   switch (type) {
-    case 'TEMPLATE_ACTION':
-      // replace me
+    case 'PROJECTS_UPDATE':
       return payload;
     default:
       return state;
   }
 };
 
-// export default projectsReducer;
+export default projectsReducer;

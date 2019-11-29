@@ -1,7 +1,10 @@
 import React from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import eventsUpdate from './actions/events-update';
+import projectsUpdate from './actions/projects-update';
 
 import PageLoader from './components/PageLoader';
 import SliderBanner from './components/SliderBanner';
@@ -15,36 +18,30 @@ import SectionContact from './components/SectionContact';
 import Footer from './components/Footer';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.onEventsUpdate = this.onEventsUpdate.bind(this);
-  }
-
   componentDidMount() {
+    const { props } = this;
     axios
       .get('/umma-server/getData')
-      .then(res => this.onEventsUpdate(res.data.events))
+      .then(res => {
+        props.projectsUpdate(res.data.projects);
+        props.eventsUpdate(res.data.events);
+      })
       .catch(err => console.error(err));
-  }
-  // console.log(res.data.events)
-
-  // DO NOT CHANGE TO ARROW FN B/C HOISTING
-  onEventsUpdate(events) {
-    // const { props } = this;
-    // this.props.onEventsUpdate(events);
-    console.log('==>', this);
-    console.log('=xxx=>', events);
   }
 
   render() {
+    console.log('8====D~ ', this.props);
+    const {
+      props: { projects, events }
+    } = this;
     return (
       <div className="app-body">
         <PageLoader />
         <SliderBanner />
         <SectionServices />
-        <SectionProjects />
+        <SectionProjects projects={projects} />
         <SectionCta />
-        <SectionEvents />
+        <SectionEvents events={events} />
         <SectionTestimonials />
         <SectionStats />
         <SectionContact />
@@ -59,8 +56,15 @@ const mapStateToProps = state => ({
   events: state.events
 });
 
-const mapActionsToProps = {
-  onEventsUpdate: eventsUpdate
+const matchDispatchToProps = dispatch => {
+  return bindActionCreators({ projectsUpdate, eventsUpdate }, dispatch);
 };
 
-export default connect(mapStateToProps, mapActionsToProps)(App);
+App.propTypes = {
+  eventsUpdate: PropTypes.func.isRequired,
+  projectsUpdate: PropTypes.func.isRequired,
+  projects: PropTypes.arrayOf.isRequired,
+  events: PropTypes.arrayOf.isRequired
+};
+
+export default connect(mapStateToProps, matchDispatchToProps)(App);
