@@ -102,7 +102,8 @@ const SectionEvents = () => (
                       className="btn btn-transparent btn-icon-left js-wave"
                       itemProp="url"
                     >
-                      <i className="material-icons">arrow_forward</i>Learn More
+                      <i className="material-icons">arrow_forward</i>
+                      Learn More
                     </a>
                   </div>
                 </div>
