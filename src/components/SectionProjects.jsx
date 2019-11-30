@@ -24,5 +24,5 @@ const SectionProjects = props => {
 export default SectionProjects;
 
 SectionProjects.propTypes = {
-  projects: PropTypes.arrayOf.isRequired
+  projects: PropTypes.arrayOf(PropTypes.array).isRequired
 };

@@ -62,8 +62,8 @@ const matchDispatchToProps = dispatch => {
 App.propTypes = {
   eventsUpdate: PropTypes.func.isRequired,
   projectsUpdate: PropTypes.func.isRequired,
-  projects: PropTypes.arrayOf.isRequired,
-  events: PropTypes.arrayOf.isRequired
+  projects: PropTypes.arrayOf(PropTypes.array).isRequired,
+  events: PropTypes.arrayOf(PropTypes.array).isRequired
 };
 
 export default connect(mapStateToProps, matchDispatchToProps)(App);
