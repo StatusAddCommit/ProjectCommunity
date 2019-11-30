@@ -37,8 +37,6 @@ import Events from './components/events/Events';
 import Details from './components/details/Details';
 import Header from './components/Header';
 
-/* TODO: destructure __redux_devtools... & remove eslint rule */
-
 const { __REDUX_DEVTOOLS_EXTENSION__: REDUX_DEVTOOLS } = window;
 
 const composedEnhancers = compose(
