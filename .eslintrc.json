@@ -5,12 +5,6 @@
     "prettier/prettier": "error",
     "no-unused-vars": "warn",
     "no-console": ["error", { "allow": ["warn", "error", "info"] }],
-    "func-names": "off",
-    "no-underscore-dangle": "off",
-    "object-shorthand": "off",
-    "class-methods-use-this": "off",
-    "react/jsx-filename-extension": "off",
-    "react/prefer-stateless-function": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/anchor-has-content": "off",
     "jsx-a11y/control-has-associated-label": "off"

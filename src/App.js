@@ -30,7 +30,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log('8====D~ ', this.props);
     const {
       props: { projects, events }
     } = this;

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+/* TODO: replace local state with state hook */
+
 class NavMenu extends Component {
   constructor(props) {
     super(props);
