@@ -970,7 +970,7 @@ const EventsSection = () => (
               <div className="card-map" data-placeholder="waiting for map">
                 <div
                   className="google-map"
-                  data-map-zoom={14}
+                  data-map-zoom={10}
                   data-map-type="roadmap"
                   data-map-style="UmmaCharity"
                   data-map-address="Oklahoma City, OK 73105"
@@ -990,9 +990,6 @@ const EventsSection = () => (
                 </li>
                 <li>
                   <a href="#" className="fa fa-instagram js-wave" />
-                </li>
-                <li>
-                  <a href="#" className="fa fa-google js-wave" />
                 </li>
               </ul>
             </div>

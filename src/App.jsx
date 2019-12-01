@@ -18,7 +18,7 @@ import SectionContact from './components/SectionContact';
 import Footer from './components/Footer';
 
 class App extends Component {
-  /* TODO: change axios async call to use redux thunk */
+  /* TODO: change async call to use redux thunk */
   componentDidMount() {
     const { props } = this;
     axios
