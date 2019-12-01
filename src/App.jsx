@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -17,7 +17,8 @@ import SectionStats from './components/SectionStats';
 import SectionContact from './components/SectionContact';
 import Footer from './components/Footer';
 
-class App extends React.Component {
+class App extends Component {
+  /* TODO: change axios async call to use redux thunk */
   componentDidMount() {
     const { props } = this;
     axios
