@@ -5,6 +5,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import reduxThunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import allReducers from './reducers';
+// import getData from './actions/get-data';
 
 import * as serviceWorker from './serviceWorker';
 

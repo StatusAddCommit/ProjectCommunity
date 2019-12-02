@@ -1,14 +1,25 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
 import EventsBanner from './EventsBanner';
 import EventsSection from './EventsSection';
 import Footer from '../Footer';
 
-const Events = () => (
+const Events = ({ events }) => (
   <div>
     <EventsBanner />
-    <EventsSection />
+    <EventsSection events={events} />
     <Footer />
   </div>
 );
 
-export default Events;
+const mapStateToProps = state => ({
+  events: state.events
+});
+
+Events.propTypes = {
+  events: PropTypes.arrayOf(PropTypes.array).isRequired
+};
+
+export default connect(mapStateToProps)(Events);

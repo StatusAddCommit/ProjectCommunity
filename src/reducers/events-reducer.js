@@ -1,4 +1,4 @@
-const eventsReducer = (state = [], { type, payload }) => {
+const eventsReducer = (state = [['...Loading']], { type, payload }) => {
   switch (type) {
     case 'EVENTS_UPDATE':
       return payload;

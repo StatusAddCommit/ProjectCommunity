@@ -3,7 +3,7 @@ import React from 'react';
 /* TODO: replace remaining static placeholders with live API data */
 
 const Event = ({ events }) =>
-  events.map(event => {
+  events.slice(0, 4).map((event, i) => {
     const eName = event[0];
     const eUrl = event[1];
     const eImgMain = event[2].split(',')[0];
@@ -14,7 +14,7 @@ const Event = ({ events }) =>
     const eDescFull = event[6];
 
     return (
-      <div className="column">
+      <div className="column" key={eName}>
         <article
           className="fly-card fly-event fly-flip-effect"
           itemScope
@@ -62,7 +62,7 @@ const Event = ({ events }) =>
               <div className="event-footer">
                 <div className="event-buttons">
                   <a
-                    href="event-details.html"
+                    href={`/event:${i}`}
                     className="btn btn-transparent btn-icon-left js-wave"
                     itemProp="url"
                   >

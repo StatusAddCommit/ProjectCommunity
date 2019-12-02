@@ -6,7 +6,7 @@ const SectionEvents = ({ events }) => (
   <section className="section padding-bottom-50" id="events">
     <div className="section-heading">
       <div className="container">
-        <div className="section-subtitle">UPCOMING EVENTS</div>
+        <div className="section-subtitle">UPCOMING</div>
         <h2 className="section-title">Events at Umma Charities</h2>
       </div>
     </div>

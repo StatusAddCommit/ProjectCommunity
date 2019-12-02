@@ -2,7 +2,7 @@ import React from 'react';
 
 /* TODO: replace remaining static data with live API data */
 
-const DetailsContent = () => (
+const DetailsContent = ({ event }) => (
   <div className="post-content">
     <p className="first-letter">
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
