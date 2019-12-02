@@ -13,7 +13,7 @@ const DetailsBanner = ({ events, id }) => (
     <div className="fly-header-content">
       <div className="page-subtitle">Event Details</div>
       <h1 id="projectTitle1" className="page-title" itemProp="title">
-        {events.length === 1 ? events[0][0] : events[id][0]}
+        {!events[id] ? '' : events[id][0]}
       </h1>
     </div>
   </section>

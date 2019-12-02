@@ -27,7 +27,7 @@ const Details = ({
               itemType="http://schema.org/WebPageElement"
               className="content"
             >
-              <DetailsEventDetails events={events} />
+              <DetailsEventDetails events={events} id={eventId} />
             </main>
 
             <aside

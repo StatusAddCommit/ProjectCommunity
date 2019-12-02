@@ -6,16 +6,16 @@ import DetailsInfoBox from './DetailsInfoBox';
 import DetailsContent from './DetailsContent';
 
 /* TODO: replace social media links after accounts are created */
-const DetailsEventDetails = ({ event }) => (
+const DetailsEventDetails = ({ events, id }) => (
   <article
     className="fly-article-details"
     itemScope
     itemType="http://schema.org/DonateAction"
     itemRef="projectTitle1"
   >
-    <DetailsGallery event={event} />
-    <DetailsInfoBox event={event} />
-    <DetailsContent event={event} />
+    <DetailsGallery event={events[id]} />
+    <DetailsInfoBox event={events[id]} />
+    <DetailsContent event={events[id]} />
     <ul className="post-social clearfix">
       <li>
         <a href="#" className="fa fa-facebook js-wave" />
@@ -31,7 +31,8 @@ const DetailsEventDetails = ({ event }) => (
 );
 
 DetailsEventDetails.propTypes = {
-  event: PropTypes.arrayOf(PropTypes.array).isRequired
+  events: PropTypes.arrayOf(PropTypes.array).isRequired,
+  id: PropTypes.string.isRequired
 };
 
 export default DetailsEventDetails;

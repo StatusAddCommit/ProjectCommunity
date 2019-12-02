@@ -1,11 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 /* TODO: replace remaining static data with live API data */
+// FIX:  event initially starts as undefined
+// need to load data before React renders any components?
 
-const DetailsContent = ({ event }) => (
+const DetailsContent = (props) => (
   <div className="post-content">
-    <p className="first-letter">
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+  {console.log('==>', props)}
+    <p className="first-letter">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
       eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
       voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
       clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
@@ -14,8 +17,7 @@ const DetailsContent = ({ event }) => (
       diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
       Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
       sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-      diam nonumy eirmod temport.
-    </p>
+      diam nonumy eirmod temport.</p>
     <blockquote>
       Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
       suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel
@@ -89,5 +91,9 @@ const DetailsContent = ({ event }) => (
     </p>
   </div>
 );
+
+DetailsContent.propTypes = {
+  event: PropTypes.arrayOf(PropTypes.array).isRequired
+};
 
 export default DetailsContent;

@@ -4,6 +4,7 @@ import React from 'react';
 
 const Event = ({ events }) =>
   events.slice(0, 4).map((event, i) => {
+    console.log('==>', event);
     const eName = event[0];
     const eUrl = event[1];
     const eImgMain = event[2].split(',')[0];

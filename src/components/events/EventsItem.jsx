@@ -14,16 +14,16 @@ const EventsItem = ({ events }) =>
     const eDescFull = event[6];
 
     return (
-      <div className="column" key={eName}>
+      <div className="column">
         <article
           className="fly-card fly-event fly-flip-effect"
           itemScope
           itemType="http://schema.org/Event"
+          key={eName}
         >
           <div className="boxed flip-front">
             <a
               className="event-media js-wave"
-              /* TODO: change event details URL to be dynamic after details page setup */
               href="event-details.html"
               itemProp="url"
             >
@@ -102,5 +102,4 @@ const EventsItem = ({ events }) =>
       </div>
     );
   });
-
 export default EventsItem;
