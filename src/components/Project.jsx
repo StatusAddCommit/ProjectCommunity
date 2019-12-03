@@ -14,7 +14,6 @@ const Project = ({ projects }) =>
     const pDonateEnable = project[8];
 
     return (
-
       <article
         className="fly-card fly-project fly-flip-effect vertical"
         itemScope

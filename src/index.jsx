@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import { createStore, applyMiddleware, compose } from 'redux';
-import reduxThunk from 'redux-thunk';
+import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import allReducers from './reducers';
 // import getData from './actions/get-data';
@@ -19,8 +19,8 @@ import Header from './components/Header';
 const { __REDUX_DEVTOOLS_EXTENSION__: REDUX_DEVTOOLS } = window;
 
 const composedEnhancers = compose(
-  REDUX_DEVTOOLS && REDUX_DEVTOOLS(),
-  applyMiddleware(reduxThunk)
+  applyMiddleware(thunk),
+  REDUX_DEVTOOLS && REDUX_DEVTOOLS()
 );
 
 const store = createStore(allReducers, composedEnhancers);

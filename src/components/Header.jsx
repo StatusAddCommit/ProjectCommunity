@@ -1,25 +1,17 @@
 import React from 'react';
-import axios from 'axios';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import eventsUpdate from '../actions/events-update';
-import projectsUpdate from '../actions/projects-update';
+// import eventsUpdate from '../actions/events-update';
+// import projectsUpdate from '../actions/projects-update';
+import getData from '../actions/get-data';
 
 import NavMenu from './NavMenu';
 
 class Header extends React.Component {
-  /* TODO: change async call to use redux thunk */
   componentDidMount() {
     const { props } = this;
-    axios
-      .get('/umma-server/getData')
-      .then(res => {
-        // res.setHeader("Secure;SameSite=None");
-        props.projectsUpdate(res.data.projects);
-        props.eventsUpdate(res.data.events);
-      })
-      .catch(err => console.error(err));
+    props.getData();
   }
 
   render() {
@@ -61,12 +53,11 @@ const mapStateToProps = state => ({
 });
 
 const matchDispatchToProps = dispatch => {
-  return bindActionCreators({ projectsUpdate, eventsUpdate }, dispatch);
+  return bindActionCreators({ getData }, dispatch);
 };
 
 Header.propTypes = {
-  eventsUpdate: PropTypes.func.isRequired,
-  projectsUpdate: PropTypes.func.isRequired
+  getData: PropTypes.func.isRequired
 };
 
 export default connect(mapStateToProps, matchDispatchToProps)(Header);

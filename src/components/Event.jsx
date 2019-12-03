@@ -7,7 +7,7 @@ const Event = ({ events }) =>
     console.log('==>', event);
     const eName = event[0];
     const eUrl = event[1];
-    const eImgMain = event[2].split(',')[0];
+    const eImgMain = event[2] && event[2].split(',')[0];
     const eImgs = event[2];
     const eLoc = event[3];
     const eDate = event[4];
@@ -25,8 +25,7 @@ const Event = ({ events }) =>
           <div className="boxed flip-front">
             <a
               className="event-media js-wave"
-              /* TODO: change event details URL to be dynamic after details page setup */
-              href="event-details.html"
+              href={`/event:${i}`}
               itemProp="url"
             >
               <img
@@ -37,7 +36,7 @@ const Event = ({ events }) =>
             </a>
             <div className="event-content">
               <h3 className="event-title" itemProp="name">
-                <a href="event-details.html">{eName}</a>
+                <a href={`/event:${i}`}>{eName}</a>
               </h3>
               <div className="event-location">
                 <a href="#" className="flip-button" itemProp="location">
@@ -78,7 +77,7 @@ const Event = ({ events }) =>
             <div className="card-map" data-placeholder="waiting for map">
               <div
                 className="google-map"
-                data-map-zoom={10}
+                data-map-zoom={!eLoc ? 1 : 8}
                 data-map-type="roadmap"
                 data-map-style="UmmaCharity"
                 data-map-address={!eLoc ? 'USA' : eLoc}
@@ -87,7 +86,7 @@ const Event = ({ events }) =>
                 data-map-marker-anchor="[16,46]"
               />
             </div>
-            {/* TODO: add conditional for map/social after flip map fix; add real social links */}
+            {/* TODO: add conditional for map/social toggle after flip map fix; add real social links */}
             <ul className="card-social">
               <li>
                 <a href="#" className="fa fa-facebook js-wave" />

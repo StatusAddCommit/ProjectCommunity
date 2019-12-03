@@ -16,7 +16,14 @@ const Details = ({
   const eventId = id.slice(1);
   return (
     <div>
-      <DetailsBanner events={events} id={eventId} />
+      <DetailsBanner
+        event={!events[0] ? [['']] : events[eventId]}
+        bgImg={
+          !events[0]
+            ? 'url(images/temp/slide-16.jpg)'
+            : events[eventId][2].split(',')[0]
+        }
+      />
 
       <div className="page-wrapper page-sidebar">
         <div className="container">
@@ -27,7 +34,9 @@ const Details = ({
               itemType="http://schema.org/WebPageElement"
               className="content"
             >
-              <DetailsEventDetails events={events} id={eventId} />
+              <DetailsEventDetails
+                event={!events[0] ? [['']] : events[eventId]}
+              />
             </main>
 
             <aside
@@ -36,6 +45,17 @@ const Details = ({
               itemType="http://schema.org/WPSideBar"
             >
               <DetailsWidgetText />
+              <ul className="post-social clearfix">
+                <li>
+                  <a href="#" className="fa fa-facebook js-wave" />
+                </li>
+                <li>
+                  <a href="#" className="fa fa-twitter js-wave" />
+                </li>
+                <li>
+                  <a href="#" className="fa fa-instagram js-wave" />
+                </li>
+              </ul>
             </aside>
           </div>
         </div>
