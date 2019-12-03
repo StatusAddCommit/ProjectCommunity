@@ -43,7 +43,6 @@ import eventsUpdate from './events-update';
 // }
 
 const getData = () => dispatch => {
-  console.log('==>', 'get data called!!!!!!!');
   return axios
     .get('/umma-server/getData')
     .then(res => {

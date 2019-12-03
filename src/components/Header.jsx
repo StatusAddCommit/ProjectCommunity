@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-// import eventsUpdate from '../actions/events-update';
-// import projectsUpdate from '../actions/projects-update';
 import getData from '../actions/get-data';
 
 import NavMenu from './NavMenu';
