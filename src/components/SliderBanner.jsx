@@ -12,12 +12,13 @@ const SliderBanner = () => (
     data-rotation-duration={1000}
   >
     <div className="cube">
-      {Banners.map(b => (
+      {Banners.map((b, i) => (
         <section
           className="slide"
           style={{
             backgroundImage: `url(${b.BannerImg})`
           }}
+          key={i}
         >
           <div className="slide-content">
             <h1 className="page-title">{b.BannerTitle}</h1>

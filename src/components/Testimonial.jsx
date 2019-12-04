@@ -7,7 +7,7 @@ const {
 
 const Testimonial = () =>
   Testimonials.map(t => (
-    <article className="testimonial">
+    <article className="testimonial" key={t.TestiName + t.TestiJob}>
       <blockquote className="testimonial-quote">{t.TestiQuote}</blockquote>
       <div className="testimonial-author">
         <div className="avatar">

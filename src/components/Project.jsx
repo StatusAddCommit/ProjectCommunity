@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const Project = ({ projects }) =>
+import gmapInit from '../helpers/gmap-init';
+import generalJs from '../helpers/general';
+import messages from '../constants/messages';
+
+const { social } = messages;
+
+const Project = ({ projects }) => {
   /* TODO: fix donate progress bar & flip map */
-  projects.map(project => {
+
+  useEffect(() => {
+    gmapInit();
+    generalJs();
+  });
+
+  return projects.map(project => {
     const pName = project[0];
     const pUrl = project[1];
     const pImg = project[2];
@@ -12,20 +24,13 @@ const Project = ({ projects }) =>
     const pDonateGoal = project[6];
     const pDonateRaised = project[7];
     const pDonateEnable = project[8];
-    const progress =
-      pDonateGoal &&
-      Math.round(
-        (pDonateRaised.split(',').join('') / pDonateGoal.split(',').join('')) *
-          100
-      );
-    console.log('==LOCATION==>', pLoc);
+
     return (
       <article
-        className="fly-card fly-project vertical fly-flip-effect flip-hover active"
+        className="fly-card fly-project vertical fly-flip-effect"
         itemScope
         itemType="http://schema.org/DonateAction"
         key={pName}
-        id='project'
       >
         <div className="boxed flip-front">
           <a
@@ -38,15 +43,12 @@ const Project = ({ projects }) =>
               alt="Current project"
               itemProp="image"
             />
-            <span className="progress">
-              <span className="progress-label" style={{ left: `${progress}%` }}>
-                {`${progress}%`}
+            {pDonateEnable && (
+              <span className="progress">
+                <span className="progress-label">0%</span>
+                <span className="progress-bar" />
               </span>
-              <span
-                className="progress-bar"
-                style={{ width: `${progress}%` }}
-              />
-            </span>
+            )}
           </a>
           <div className="project-content">
             <h3 className="project-title" itemProp="name">
@@ -73,21 +75,23 @@ const Project = ({ projects }) =>
                   <div className="label">{!pDonateEnable ? '' : 'raised'}</div>
                   <div
                     className="value"
-                    data-raised={!pDonateRaised ? 0 : { pDonateRaised }}
+                    data-raised={
+                      !pDonateRaised ? 0 : pDonateRaised.replace(',', '')
+                    }
                   >
                     <sup>{!pDonateEnable ? '' : '$'}</sup>
-                    {pDonateRaised === '' ? '' : pDonateRaised}
+                    {!pDonateRaised ? '' : pDonateRaised}
                   </div>
                 </li>
                 <li>
                   <div className="label">{!pDonateEnable ? '' : 'goal'}</div>
                   <div
                     className="value"
-                    data-goal={!pDonateGoal ? 0 : { pDonateGoal }}
+                    data-goal={!pDonateGoal ? 0 : pDonateGoal.replace(',', '')}
                     itemProp="target"
                   >
                     <sup>{!pDonateEnable ? '' : '$'}</sup>
-                    {pDonateGoal === '' ? '' : pDonateGoal}
+                    {!pDonateGoal ? '' : pDonateGoal}
                   </div>
                 </li>
               </ul>
@@ -107,30 +111,29 @@ const Project = ({ projects }) =>
           <div className="card-map" data-placeholder="waiting for map">
             <div
               className="google-map"
-              data-map-zoom={10}
+              data-map-zoom={!pLoc ? 1 : 14}
               data-map-type="roadmap"
               data-map-style="UmmaCharity"
               data-map-address={!pLoc ? 'USA' : pLoc}
-              data-map-marker="images/marker.png"
+              data-map-marker={!pLoc ? '' : 'images/marker.png'}
               data-map-marker-size="[31,46]"
               data-map-marker-anchor="[16,46]"
             />
           </div>
-          {/* TODO: add conditional for map/social after flip map fix; add real social links */}
           <ul className="card-social">
             <li>
-              <a href="#" className="fa fa-facebook js-wave" />
+              <a href={social.fb} className="fa fa-facebook js-wave" />
             </li>
             <li>
-              <a href="#" className="fa fa-twitter js-wave" />
+              <a href={social.tw} className="fa fa-twitter js-wave" />
             </li>
             <li>
-              <a href="#" className="fa fa-instagram js-wave" />
+              <a href={social.ig} className="fa fa-instagram js-wave" />
             </li>
           </ul>
         </div>
       </article>
     );
   });
-
+};
 export default Project;

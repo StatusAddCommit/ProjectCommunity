@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
@@ -13,20 +13,30 @@ import SectionStats from './components/SectionStats';
 import SectionContact from './components/SectionContact';
 import Footer from './components/Footer';
 
-const App = ({ projects, events }) => (
-  <div className="app-body">
-    <PageLoader />
-    <SliderBanner />
-    <SectionServices />
-    <SectionProjects projects={projects} />
-    <SectionCta />
-    <SectionEvents events={events} />
-    <SectionTestimonials />
-    <SectionStats />
-    <SectionContact />
-    <Footer />
-  </div>
-);
+// import gmapInit from './helpers/gmap-init';
+// import generalJs from './helpers/general';
+
+const App = ({ projects, events }) => {
+  // useEffect(() => {
+  //   // gmapInit();
+  //   // generalJs();
+  // }, []);
+
+  return (
+    <div className="app-body">
+      <PageLoader />
+      <SliderBanner />
+      <SectionServices />
+      <SectionProjects projects={projects} />
+      <SectionCta />
+      <SectionEvents events={events} />
+      <SectionTestimonials />
+      <SectionStats />
+      <SectionContact />
+      <Footer />
+    </div>
+  );
+};
 
 const mapStateToProps = state => ({
   projects: state.projects,
