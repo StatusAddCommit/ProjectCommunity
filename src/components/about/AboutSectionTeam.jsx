@@ -1,7 +1,8 @@
 import React from 'react';
 import AboutTeamMember from './AboutTeamMember';
 
-/* TODO: replace all remaining static data with data from constants/messages.js */
+/* (TBD) TODO: if section kept, replace all remaining static data with data from constants/messages.js */
+
 const AboutSectionTeam = () => (
   <section className="section no-padding-bottom" id="team">
     <div className="container">

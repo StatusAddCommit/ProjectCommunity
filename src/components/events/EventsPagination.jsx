@@ -1,5 +1,7 @@
 import React from 'react';
 
+/* TODO: connect/render pages after events cards fixed */
+
 const EventsPagination = () => (
   <ul className="pagination">
     <li className="disabled prev">

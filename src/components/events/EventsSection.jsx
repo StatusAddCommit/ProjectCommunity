@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import EventsItem from './EventsItem';
 import EventsPagination from './EventsPagination';
 
-/* TODO: replace static placeholders with dynamic components rendered with live API data */
-
 const EventsSection = ({ events }) => {
   return (
     <section className="section">

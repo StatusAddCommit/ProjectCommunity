@@ -6,6 +6,9 @@ import DetailsBanner from './DetailsBanner';
 import DetailsEventDetails from './DetailsEventDetails';
 import DetailsWidgetText from './DetailsWidgetText';
 import Footer from '../Footer';
+import messages from '../../constants/messages';
+
+const { social } = messages;
 
 const Details = ({
   events,
@@ -16,14 +19,7 @@ const Details = ({
   const eventId = id.slice(1);
   return (
     <div>
-      <DetailsBanner
-        event={!events[0] ? [['']] : events[eventId]}
-        bgImg={
-          !events[0]
-            ? 'url(images/temp/slide-16.jpg)'
-            : events[eventId][2].split(',')[0]
-        }
-      />
+      <DetailsBanner event={!events[0] ? [['']] : events[eventId]} />
 
       <div className="page-wrapper page-sidebar">
         <div className="container">
@@ -47,13 +43,13 @@ const Details = ({
               <DetailsWidgetText />
               <ul className="post-social clearfix">
                 <li>
-                  <a href="#" className="fa fa-facebook js-wave" />
+                  <a href={social.fb} className="fa fa-facebook js-wave" />
                 </li>
                 <li>
-                  <a href="#" className="fa fa-twitter js-wave" />
+                  <a href={social.tw} className="fa fa-twitter js-wave" />
                 </li>
                 <li>
-                  <a href="#" className="fa fa-instagram js-wave" />
+                  <a href={social.ig} className="fa fa-instagram js-wave" />
                 </li>
               </ul>
             </aside>

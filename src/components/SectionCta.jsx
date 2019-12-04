@@ -13,7 +13,7 @@ const SectionCta = () => (
     <div className="container">
       <h2 className="section-title">{home.CtaTitle}</h2>
       <div className="section-subtitle">{home.CtaSub}</div>
-      <a href="#" className="btn btn-medium btn-yellow js-wave">
+      <a href={home.CtaLink} className="btn btn-medium btn-yellow js-wave">
         {home.CtaBtn}
       </a>
     </div>

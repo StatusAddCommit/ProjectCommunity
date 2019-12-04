@@ -8695,8 +8695,8 @@ a.panel-toggle.collapsed:active {
   z-index: auto;
   opacity: 0;
 }
-.fly-flip-effect.flip-hover:hover,
-.fly-flip-effect.flip-hover:active,
+.fly-flip-effect.flip-hover.hover,
+.fly-flip-effect.flip-hover.active,
 .fly-flip-effect.flipped {
   z-index: 2;
   -webkit-transition: z-index 1s step-start;

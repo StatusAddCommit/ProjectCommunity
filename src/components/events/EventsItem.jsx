@@ -1,4 +1,7 @@
 import React from 'react';
+import messages from '../../constants/messages';
+
+const { social } = messages;
 
 /* TODO: replace remaining static placeholders with live API data */
 
@@ -85,16 +88,15 @@ const EventsItem = ({ events }) =>
                 data-map-marker-anchor="[16,46]"
               />
             </div>
-            {/* TODO: add conditional for map/social after flip map fix; add real social links */}
             <ul className="card-social">
               <li>
-                <a href="#" className="fa fa-facebook js-wave" />
+                <a href={social.fb} className="fa fa-facebook js-wave" />
               </li>
               <li>
-                <a href="#" className="fa fa-twitter js-wave" />
+                <a href={social.tw} className="fa fa-twitter js-wave" />
               </li>
               <li>
-                <a href="#" className="fa fa-instagram js-wave" />
+                <a href={social.ig} className="fa fa-instagram js-wave" />
               </li>
             </ul>
           </div>

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
+/* (ESLINT false positive) correct input controls exist for all labels, but are not in expected positions due to formatting requirements */
 
-/* TODO: add eslint required control for labels */
+import React from 'react';
 
 const SectionContact = () => (
   <section className="section gray" id="contact">
@@ -12,7 +12,6 @@ const SectionContact = () => (
       </div>
     </div>
     <div className="container">
-      {}
       <form
         action="#"
         method="post"
@@ -22,7 +21,7 @@ const SectionContact = () => (
         <div className="row">
           <div className="col-sm-4">
             <div className="form-group required">
-              <label htmlFor="your-name">NAME</label>
+              <label htmlFor="your-name">Name</label>
               <br />
               <span className="wpcf7-form-control-wrap your-name">
                 <input
@@ -70,7 +69,7 @@ const SectionContact = () => (
           </div>
           <div className="col-sm-12">
             <div className="form-group required">
-              <label htmlFor="your-message">message</label>
+              <label htmlFor="your-message">Message</label>
               <br />
               <span className="wpcf7-form-control-wrap your-message">
                 <textarea
@@ -92,7 +91,6 @@ const SectionContact = () => (
           </div>
         </div>
       </form>
-      {}
     </div>
   </section>
 );

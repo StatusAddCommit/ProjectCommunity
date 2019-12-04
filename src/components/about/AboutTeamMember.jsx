@@ -1,5 +1,7 @@
 import React from 'react';
 
+/* (TBD) TODO: if section kept, replace all remaining static data with data from constants/messages.js */
+
 const AboutTeamMember = () => (
   <div className="column">
     {}

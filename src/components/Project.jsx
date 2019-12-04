@@ -6,23 +6,30 @@ const Project = ({ projects }) =>
     const pName = project[0];
     const pUrl = project[1];
     const pImg = project[2];
-    const pLoc = project[3];
+    const pLoc = project[3] && project[3];
     const pDesc = project[4];
     const pDonateLink = project[5];
     const pDonateGoal = project[6];
     const pDonateRaised = project[7];
     const pDonateEnable = project[8];
-
+    const progress =
+      pDonateGoal &&
+      Math.round(
+        (pDonateRaised.split(',').join('') / pDonateGoal.split(',').join('')) *
+          100
+      );
+    console.log('==LOCATION==>', pLoc);
     return (
       <article
-        className="fly-card fly-project fly-flip-effect vertical"
+        className="fly-card fly-project vertical fly-flip-effect flip-hover active"
         itemScope
         itemType="http://schema.org/DonateAction"
         key={pName}
+        id='project'
       >
         <div className="boxed flip-front">
           <a
-            className="project-media js-wave"
+            className="project-media js-wave waves-effect"
             href={!pUrl ? null : pUrl}
             itemProp="url"
           >
@@ -32,8 +39,13 @@ const Project = ({ projects }) =>
               itemProp="image"
             />
             <span className="progress">
-              <span className="progress-label">0%</span>
-              <span className="progress-bar" />
+              <span className="progress-label" style={{ left: `${progress}%` }}>
+                {`${progress}%`}
+              </span>
+              <span
+                className="progress-bar"
+                style={{ width: `${progress}%` }}
+              />
             </span>
           </a>
           <div className="project-content">

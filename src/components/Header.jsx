@@ -27,6 +27,7 @@ class Header extends React.Component {
         >
           <div className="container">
             <div className="hamburger">
+              {/* DO NOT CHANGE # ANCHOR TO BUTTON (will break mobile nav menu) */}
               <a href="#" />
             </div>
             <div className="navigation-bar-flex">

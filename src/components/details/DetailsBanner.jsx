@@ -1,15 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { connect } from 'react-redux';
+import messages from '../../constants/messages';
 
-/* TODO: replace remaining static data with live API data */
+const {
+  eventdetails: { DetailsBannerImg }
+} = messages;
 
-const DetailsBanner = ({ event, bgImg }) => (
+const DetailsBanner = ({ event }) => (
   <section
     className="fly-header parallax overlay"
     style={{
-      backgroundImage: `${bgImg}`
+      backgroundImage: `url(${DetailsBannerImg})`
     }}
   >
     <div className="fly-header-content">
