@@ -1,20 +1,10 @@
-import React, { useEffect } from 'react';
-
-import gmapInit from '../helpers/gmap-init';
-import generalJs from '../helpers/general';
+import React from 'react';
 import messages from '../constants/messages';
 
 const { social } = messages;
 
-const Project = ({ projects }) => {
-  /* TODO: fix donate progress bar & flip map */
-
-  useEffect(() => {
-    gmapInit();
-    generalJs();
-  });
-
-  return projects.map(project => {
+const Project = ({ projects }) =>
+  projects.map(project => {
     const pName = project[0];
     const pUrl = project[1];
     const pImg = project[2];
@@ -111,7 +101,7 @@ const Project = ({ projects }) => {
           <div className="card-map" data-placeholder="waiting for map">
             <div
               className="google-map"
-              data-map-zoom={!pLoc ? 1 : 14}
+              data-map-zoom={!pLoc ? 1 : 13}
               data-map-type="roadmap"
               data-map-style="UmmaCharity"
               data-map-address={!pLoc ? 'USA' : pLoc}
@@ -135,5 +125,5 @@ const Project = ({ projects }) => {
       </article>
     );
   });
-};
+
 export default Project;

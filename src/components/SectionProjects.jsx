@@ -1,25 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Project from './Project';
+import gmapInit from '../helpers/gmap-init';
+import generalJs from '../helpers/general';
 
-const SectionProjects = ({ projects }) => (
-  <section className="section padding-bottom-70" id="projects">
-    <div className="section-heading">
+const SectionProjects = ({ projects }) => {
+  useEffect(() => {
+    gmapInit();
+    generalJs();
+  });
+
+  return (
+    <section className="section padding-bottom-70" id="projects">
+      <div className="section-heading">
+        <div className="container">
+          <div className="section-subtitle">WHAT WE ARE UP TO</div>
+          <h2 className="section-title">Current Projects</h2>
+        </div>
+      </div>
       <div className="container">
-        <div className="section-subtitle">WHAT WE ARE UP TO</div>
-        <h2 className="section-title">Current Projects</h2>
+        <div className="fly-projects alternate-layout">
+          <Project projects={projects} />
+        </div>
       </div>
-    </div>
-    <div className="container">
-      <div className="fly-projects alternate-layout">
-        <Project projects={projects} />
-        {/* FOR TESTING PURPOSE; REMOVE WHEN BUG FIXED */}
-        
-        {/* FOR TESTING PURPOSE; REMOVE WHEN BUG FIXED */}
-      </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default SectionProjects;
 

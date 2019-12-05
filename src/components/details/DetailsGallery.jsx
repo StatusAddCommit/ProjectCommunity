@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 /* TODO: replace image links with live API data */
 const DetailsGallery = ({ eImgs }) => {
-  console.log('==>', eImgs);
+  console.log('=i=>', eImgs);
   return (
     <div className="post-media">
       <div className="owl-carousel post-slider">

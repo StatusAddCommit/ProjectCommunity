@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import getData from '../../actions/get-data';
+import gmapInit from '../../helpers/gmap-init';
+import generalJs from '../../helpers/general';
 
 import DetailsBanner from './DetailsBanner';
 import DetailsEventDetails from './DetailsEventDetails';
@@ -16,6 +19,12 @@ const Details = ({
     params: { id }
   }
 }) => {
+  useEffect(() => {
+    getData();
+    gmapInit();
+    generalJs();
+  });
+
   const eventId = id.slice(1);
   return (
     <div>

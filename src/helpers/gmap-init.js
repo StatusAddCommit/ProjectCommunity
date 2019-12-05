@@ -1,7 +1,5 @@
 /* eslint-disable */
 
-// import jQuery from 'jquery';
-
 const gmapInit = () => 
   jQuery('.google-map').each(function(index) {
     var $map = jQuery(this),
