@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutSectionTeam from './AboutSectionTeam';
+// import AboutSectionTeam from './AboutSectionTeam';
 import AboutMissionTimeline from './AboutMissionTimeline';
 import Footer from '../Footer';
 import messages from '../../constants/messages';
@@ -20,7 +20,7 @@ const About = () => (
         <div className="page-subtitle">{about.BannerSub}</div>
       </div>
     </section>
-    <AboutSectionTeam />
+    {/* <AboutSectionTeam /> */}
     <AboutMissionTimeline />
     <Footer />
   </div>

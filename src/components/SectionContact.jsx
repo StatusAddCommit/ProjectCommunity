@@ -13,7 +13,8 @@ const SectionContact = () => (
     </div>
     <div className="container">
       <form
-        action="#"
+        /* TODO: replace action with form submit link when created */
+        action=""
         method="post"
         className="wpcf7-form"
         noValidate="novalidate"

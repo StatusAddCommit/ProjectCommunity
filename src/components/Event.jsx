@@ -7,15 +7,11 @@ const { social } = messages;
 
 const Event = ({ events }) =>
   events.slice(0, 4).map((event, i) => {
-    console.log('==>', event);
     const eName = event[0];
-    const eUrl = event[1];
     const eImgMain = event[2] && event[2].split(',')[0];
-    const eImgs = event[2];
     const eLoc = event[3];
     const eDate = event[4];
     const eDescShort = event[5];
-    const eDescFull = event[6];
 
     return (
       <div className="column" key={eName}>
@@ -42,10 +38,14 @@ const Event = ({ events }) =>
                 <a href={`/event:${i}`}>{eName}</a>
               </h3>
               <div className="event-location">
-                <a href="#" className="flip-button" itemProp="location">
+                <button
+                  type="button"
+                  className="flip-button"
+                  itemProp="location"
+                >
                   <i className="material-icons">location_on</i>
                   {!eLoc ? 'Earth, Solar System' : eLoc}
-                </a>
+                </button>
                 <time
                   className="event-date"
                   dateTime={!eDate ? null : eDate}
@@ -80,7 +80,7 @@ const Event = ({ events }) =>
             <div className="card-map" data-placeholder="waiting for map">
               <div
                 className="google-map"
-                data-map-zoom={!eLoc ? 1 : 8}
+                data-map-zoom={!eLoc ? 1 : 13}
                 data-map-type="roadmap"
                 data-map-style="UmmaCharity"
                 data-map-address={!eLoc ? 'USA' : eLoc}

@@ -260,7 +260,6 @@ Template: UmmahCharity-parent
 @font-face {
   font-family: 'UmmahCharity';
   src: url('fonts/UmmahCharity/UmmahCharity.eot');
-  src: url('fonts/UmmahCharity/UmmahCharityd41d.eot?#iefix') format('embedded-opentype'), url('fonts/UmmahCharity/UmmahCharity.ttf') format('truetype'), url('fonts/UmmahCharity/UmmahCharity.woff') format('woff'), url('fonts/UmmahCharity/UmmahCharity.svg#UmmahCharity') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -2808,6 +2807,10 @@ a.back-to-top:active {
 }
 .buttons .btn.btn-wide {
   margin-right: 0;
+}
+.flip-button {
+  color: #0fa76c;
+  padding: 0;
 }
 /* Form Fields */
 /*-----------------------------------*/

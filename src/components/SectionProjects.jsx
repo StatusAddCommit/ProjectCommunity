@@ -27,8 +27,8 @@ const SectionProjects = ({ projects }) => {
   );
 };
 
-export default SectionProjects;
-
 SectionProjects.propTypes = {
   projects: PropTypes.arrayOf(PropTypes.array).isRequired
 };
+
+export default SectionProjects;

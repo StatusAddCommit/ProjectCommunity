@@ -21,14 +21,14 @@ const DetailsInfoBox = ({ event }) => {
           <ul className="event-location">
             <li>
               <div className="label">Location:</div>
-              <a
-                href="#"
+              <button
+                type="button"
                 className={!eLoc ? '' : 'flip-button'}
                 itemProp="location"
               >
                 <i className="material-icons">location_on</i>
                 {!eLoc ? 'Event location coming soon!' : eLoc}
-              </a>
+              </button>
             </li>
             <li>
               <div className="label">Date:</div>

@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 const DetailsGallery = ({ eImgs }) => {
   const settings = {
     dots: true,
+    dotClass: 'slick-thumb',
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -15,7 +16,8 @@ const DetailsGallery = ({ eImgs }) => {
     autoplay: true,
     autoplaySpeed: 3000,
     focusOnHover: true,
-    adaptiveHeight: false
+    adaptiveHeight: false,
+    fade: true
   };
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading

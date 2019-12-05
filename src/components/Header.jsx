@@ -28,7 +28,7 @@ class Header extends Component {
           <div className="container">
             <div className="hamburger">
               {/* DO NOT CHANGE # ANCHOR TO BUTTON (will break mobile nav menu) */}
-              <a href="#" />
+              <a href={null} />
             </div>
             <div className="navigation-bar-flex">
               <div className="logo">

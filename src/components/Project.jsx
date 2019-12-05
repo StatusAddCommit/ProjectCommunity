@@ -46,10 +46,10 @@ const Project = ({ projects }) =>
             </h3>
 
             <div className="project-location">
-              <a href="#" className="flip-button" itemProp="location">
+              <button type="button" className="flip-button" itemProp="location">
                 <i className="material-icons">location_on</i>
                 {!pLoc ? 'Earth, Solar System' : pLoc}
-              </a>
+              </button>
             </div>
 
             <div className="project-description" itemProp="description">

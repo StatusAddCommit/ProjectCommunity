@@ -3,31 +3,25 @@ import messages from '../../constants/messages';
 
 const { social } = messages;
 
-/* TODO: replace remaining static placeholders with live API data */
-
 const EventsItem = ({ events }) =>
-  events.map(event => {
+  events.map((event, i) => {
     const eName = event[0];
-    const eUrl = event[1];
     const eImgMain = event[2].split(',')[0];
-    const eImgs = event[2];
     const eLoc = event[3];
     const eDate = event[4];
     const eDescShort = event[5];
-    const eDescFull = event[6];
 
     return (
-      <div className="column">
+      <div className="column" key={eName}>
         <article
           className="fly-card fly-event fly-flip-effect"
           itemScope
           itemType="http://schema.org/Event"
-          key={eName}
         >
           <div className="boxed flip-front">
             <a
               className="event-media js-wave"
-              href="event-details.html"
+              href={`/event:${i}`}
               itemProp="url"
             >
               <img
@@ -38,13 +32,17 @@ const EventsItem = ({ events }) =>
             </a>
             <div className="event-content">
               <h3 className="event-title" itemProp="name">
-                <a href="event-details.html">{eName}</a>
+                <a href={`/event:${i}`}>{eName}</a>
               </h3>
               <div className="event-location">
-                <a href="#" className="flip-button" itemProp="location">
+                <button
+                  type="button"
+                  className="flip-button"
+                  itemProp="location"
+                >
                   <i className="material-icons">location_on</i>
                   {!eLoc ? 'Earth, Solar System' : eLoc}
-                </a>
+                </button>
                 <time
                   className="event-date"
                   dateTime={!eDate ? null : eDate}
@@ -64,7 +62,7 @@ const EventsItem = ({ events }) =>
               <div className="event-footer">
                 <div className="event-buttons">
                   <a
-                    href="event-details.html"
+                    href={`/event:${i}`}
                     className="btn btn-transparent btn-icon-left js-wave"
                     itemProp="url"
                   >
@@ -79,7 +77,7 @@ const EventsItem = ({ events }) =>
             <div className="card-map" data-placeholder="waiting for map">
               <div
                 className="google-map"
-                data-map-zoom={10}
+                data-map-zoom={!eLoc ? 1 : 13}
                 data-map-type="roadmap"
                 data-map-style="UmmaCharity"
                 data-map-address={!eLoc ? 'USA' : eLoc}

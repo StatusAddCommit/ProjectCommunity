@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import gmapInit from '../../helpers/gmap-init';
+import generalJs from '../../helpers/general';
 
 import EventsItem from './EventsItem';
-import EventsPagination from './EventsPagination';
 
 const EventsSection = ({ events }) => {
+  useEffect(() => {
+    gmapInit();
+    generalJs();
+  });
   return (
     <section className="section">
       <div className="container">
         <div className="fly-events flex-container">
           <EventsItem events={events} />
         </div>
-        <EventsPagination />
       </div>
     </section>
   );
