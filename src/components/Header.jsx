@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -6,7 +6,7 @@ import getData from '../actions/get-data';
 
 import NavMenu from './NavMenu';
 
-class Header extends React.Component {
+class Header extends Component {
   componentDidMount() {
     const { props } = this;
     props.getData();

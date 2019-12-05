@@ -14,6 +14,8 @@ const DetailsEventDetails = ({ event }) => (
     itemRef="projectTitle1"
   >
     <DetailsGallery eImgs={!event[2] ? [['']] : event[2].split(',')} />
+    <br />
+    <br />
     <DetailsInfoBox event={event} />
     <DetailsContent event={event} />
   </article>
