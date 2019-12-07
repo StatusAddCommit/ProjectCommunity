@@ -10,6 +10,7 @@ const EventsSection = ({ events }) => {
     gmapInit();
     generalJs();
   });
+
   return (
     <section className="section">
       <div className="container">

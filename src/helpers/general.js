@@ -224,7 +224,7 @@ const generalJs = () =>
 
       pageLoader: function(isActive, maxLoadTime) {
         var loader = $('.page-loader'),
-          maxLoadTime = maxLoadTime ? maxLoadTime : 10000; // Show Page Anyway after this Time
+          maxLoadTime = maxLoadTime ? maxLoadTime : 2000; // Show Page Anyway after this Time
 
         function hideLoader() {
           var flySlider = $('.fly-slider'),

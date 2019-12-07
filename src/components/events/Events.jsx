@@ -11,6 +11,7 @@ const Events = ({ events }) => {
   useEffect(() => {
     generalJs();
   });
+
   return (
     <div>
       <EventsBanner />

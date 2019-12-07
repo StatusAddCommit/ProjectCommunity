@@ -119,6 +119,18 @@ const messages = {
     BannerTitle: 'Our Mission',
     BannerSub: 'One sentence mission statement here',
 
+    // Team member profiles
+    team: [
+      {
+        TeamMemberName: '',
+        TeamMemberTitle: '',
+        TeamMemberDesc: '',
+        TeamMemberFb: '',
+        TeamMemberTw: '',
+        TeamMemberIg: ''
+      }
+    ],
+
     // About-page timeline items month/year/title/description 1st paragraph/rest of description
     timelineContent: [
       {

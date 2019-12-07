@@ -7,14 +7,6 @@ import generalJs from '../helpers/general';
 
 import NavMenu from './NavMenu';
 
-// class Header extends Component {
-//   componentDidMount() {
-//     const { props } = this;
-//     props.getData();
-//   }
-
-//   render() {
-
 const Header = props => {
   useEffect(() => {
     props.getData();
