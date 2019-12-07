@@ -1,50 +1,61 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import getData from '../actions/get-data';
+import generalJs from '../helpers/general';
 
 import NavMenu from './NavMenu';
 
-class Header extends Component {
-  componentDidMount() {
-    const { props } = this;
-    props.getData();
-  }
+// class Header extends Component {
+//   componentDidMount() {
+//     const { props } = this;
+//     props.getData();
+//   }
 
-  render() {
-    return (
-      <header
-        id="header"
-        className="header"
-        itemScope
-        itemType="http://schema.org/WPHeader"
+//   render() {
+
+const Header = props => {
+  useEffect(() => {
+    props.getData();
+    generalJs();
+  }, []);
+
+  return (
+    <header
+      id="header"
+      className="header"
+      itemScope
+      itemType="http://schema.org/WPHeader"
+    >
+      <nav
+        className="navigation-bar"
+        data-become-sticky={100}
+        data-no-placeholder
       >
-        <nav
-          className="navigation-bar"
-          data-become-sticky={100}
-          data-no-placeholder
-        >
-          <div className="container">
-            <div className="hamburger">
-              {/* DO NOT CHANGE # ANCHOR TO BUTTON (will break mobile nav menu) */}
-              <a href={null} />
-            </div>
-            <div className="navigation-bar-flex">
-              <div className="logo">
-                <a href="/">
-                  Umma
-                  <span>Charities</span>
-                </a>
-              </div>
-              <NavMenu />
-            </div>
+        <div className="container">
+          <div className="hamburger">
+            <a
+              href="#"
+              onClick={() => {
+                console.log('==>', 'hamburger clicked');
+              }}
+            />
           </div>
-        </nav>
-      </header>
-    );
-  }
-}
+          <div className="navigation-bar-flex">
+            <div className="logo">
+              <a href="/">
+                Umma
+                <span>Charities</span>
+              </a>
+            </div>
+            <NavMenu />
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
+};
 
 const mapStateToProps = state => ({
   projects: state.projects,
