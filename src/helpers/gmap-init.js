@@ -12,21 +12,6 @@ const gmapInit = () =>
       markerImgSize = $map.data('mapMarkerSize') || [],
       markerAnchor = $map.data('mapMarkerAnchor') || [];
 
-    /*if(markerImg) {
-
-			if(markerImgSize.length > 1){
-				markerImgSize = markerImgSize.split(',');
-				markerImgSize[0] = parseInt(markerImgSize[0], 10);
-				markerImgSize[1] = parseInt(markerImgSize[1], 10);
-			}
-
-			if(markerAnchor.length > 1){
-				markerAnchor = markerAnchor.split(',');
-				markerAnchor[0] = parseInt(markerAnchor[0], 10);
-				markerAnchor[1] = parseInt(markerAnchor[1], 10);
-			}
-		}*/
-
     buildMarkers();
 
     function buildMarkers() {
@@ -130,7 +115,7 @@ const gmapInit = () =>
           markers: markers
         });
       }
-    }, 3000 * index);
+    }, 2000 * index);
   });
 
 

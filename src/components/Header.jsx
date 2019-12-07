@@ -27,12 +27,7 @@ const Header = props => {
       >
         <div className="container">
           <div className="hamburger">
-            <a
-              href="#"
-              onClick={() => {
-                console.log('==>', 'hamburger clicked');
-              }}
-            />
+            <a href={null} />
           </div>
           <div className="navigation-bar-flex">
             <div className="logo">
