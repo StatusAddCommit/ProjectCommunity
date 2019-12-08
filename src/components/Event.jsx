@@ -22,7 +22,7 @@ const Event = ({ events }) =>
           <div className="boxed flip-front">
             <a
               className="event-media js-wave"
-              href={`/event:${i}`}
+              href={`/event:${eName.replace(/\s/g, '_')}`}
               itemProp="url"
             >
               <img
@@ -33,7 +33,7 @@ const Event = ({ events }) =>
             </a>
             <div className="event-content">
               <h3 className="event-title" itemProp="name">
-                <a href={`/event:${i}`}>{eName}</a>
+                <a href={`/event:${eName.replace(/\s/g, '_')}`}>{eName}</a>
               </h3>
               <div className="event-location">
                 <button
@@ -63,7 +63,7 @@ const Event = ({ events }) =>
               <div className="event-footer">
                 <div className="event-buttons">
                   <a
-                    href={`/event:${i}`}
+                    href={`/event:${eName.replace(/\s/g, '_')}`}
                     className="btn btn-transparent btn-icon-left js-wave"
                     itemProp="url"
                   >

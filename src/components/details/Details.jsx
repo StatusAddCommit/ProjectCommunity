@@ -25,7 +25,15 @@ const Details = ({
     generalJs();
   });
 
-  const eventId = id.slice(1);
+  const eventName = id.slice(1).replace(/_/g, ' ');
+  const eventId = events.reduce((index, e, i) => {
+    if (e[0] === eventName) {
+      // eslint-disable-next-line no-param-reassign
+      index = i;
+    }
+    return index;
+  }, -1);
+
   return (
     <div>
       <DetailsBanner event={!events[0] ? [['']] : events[eventId]} />

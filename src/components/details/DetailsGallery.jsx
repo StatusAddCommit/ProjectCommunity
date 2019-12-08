@@ -14,7 +14,7 @@ const DetailsGallery = ({ eImgs }) => {
     slidesToScroll: 1,
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2500,
     focusOnHover: true,
     adaptiveHeight: false,
     fade: true

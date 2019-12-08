@@ -5,7 +5,6 @@ import DetailsGallery from './DetailsGallery';
 import DetailsInfoBox from './DetailsInfoBox';
 import DetailsContent from './DetailsContent';
 
-/* TODO: replace social media links after accounts are created */
 const DetailsEventDetails = ({ event }) => (
   <article
     className="fly-article-details"
