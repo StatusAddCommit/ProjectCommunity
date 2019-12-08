@@ -7,7 +7,9 @@ const SectionEvents = ({ events }) => (
     <div className="section-heading">
       <div className="container">
         <div className="section-subtitle">UPCOMING</div>
-        <h2 className="section-title">Events at Umma Charities</h2>
+        <h2 className="section-title">
+          <a href="/events">Events at Umma Charities</a>
+        </h2>
       </div>
     </div>
     <div className="container">
@@ -15,6 +17,19 @@ const SectionEvents = ({ events }) => (
         <Event events={events} />
       </div>
     </div>
+    {events.length > 4 ? (
+      <div className="section-heading">
+        <button
+          href="/events"
+          type="button"
+          className="btn btn-large btn-green js-wave waves-effect"
+        >
+          View All Events
+        </button>
+      </div>
+    ) : (
+      <div />
+    )}
   </section>
 );
 

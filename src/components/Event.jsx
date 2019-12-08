@@ -3,8 +3,6 @@ import messages from '../constants/messages';
 
 const { social } = messages;
 
-/* TODO: replace remaining static placeholders with live API data */
-
 const Event = ({ events }) =>
   events.slice(0, 4).map((event, i) => {
     const eName = event[0];
