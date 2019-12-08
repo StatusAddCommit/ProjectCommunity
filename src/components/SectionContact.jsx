@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-/* (ESLINT false positive) correct input controls exist for all labels, but are not in expected positions due to formatting requirements */
+/* (ESLINT false positive) correct input controls exist for all labels, but are not in expected positions due to design format requirements */
 
 import React, { useState } from 'react';
 import axios from 'axios';
-import { red } from 'ansi-colors';
 
 const GOOGLE_FORM_NAME_ID = 'entry.171070047';
 const GOOGLE_FORM_EMAIL_ID = 'entry.165833056';
@@ -161,8 +160,9 @@ const SectionContact = () => {
                   <div />
                 ) : (
                   <div>
-                    <i style={{ color: 'red', paddingBottom: '15px' }}><small>
-                      * Please fill out all required fields before submitting.
+                    <i style={{ color: 'red', paddingBottom: '15px' }}>
+                      <small>
+                        * Please fill out all required fields before submitting.
                       </small>
                     </i>
                   </div>

@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from 'react';
 import messages from '../../constants/messages';
 
@@ -25,10 +27,10 @@ const AboutTeamMember = () =>
             <div className="member-position" itemProp="jobTitle">
               {member.TeamMemberTitle}
             </div>
-            <a href="#" className="member-link flip-button">
+            <button type="button" href="#" className="member-link flip-button">
               <i className="material-icons">arrow_forward</i>
               see profile
-            </a>
+            </button>
           </div>
         </div>
         <div className="boxed flip-back">

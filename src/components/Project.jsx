@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from 'react';
 import messages from '../constants/messages';
 
@@ -23,9 +25,10 @@ const Project = ({ projects }) =>
         key={pName}
       >
         <div className="boxed flip-front">
-          <a
+          <button
             className="project-media js-wave waves-effect"
             href={!pUrl ? null : pUrl}
+            type="button"
             itemProp="url"
           >
             <img
@@ -39,10 +42,12 @@ const Project = ({ projects }) =>
                 <span className="progress-bar" />
               </span>
             )}
-          </a>
+          </button>
           <div className="project-content">
             <h3 className="project-title" itemProp="name">
-              <a href={!pUrl ? null : pUrl}>{pName}</a>
+              <button href={!pUrl ? null : pUrl} type="button">
+                {pName}
+              </button>
             </h3>
 
             <div className="project-location">

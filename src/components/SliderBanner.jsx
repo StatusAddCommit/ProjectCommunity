@@ -12,7 +12,7 @@ const SliderBanner = () => (
     data-rotation-duration={1000}
   >
     <div className="cube">
-      {Banners.map((b, i) => (
+      {Banners.map(b => (
         <section
           className="slide"
           style={{

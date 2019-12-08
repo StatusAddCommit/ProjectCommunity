@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from 'react';
 import messages from '../../constants/messages';
 

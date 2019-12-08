@@ -1,5 +1,5 @@
 /* eslint-disable react/no-array-index-key */
-/* NOTE: mapping event full decription to new lines use index as key to prevent adding unnecessary time complexity */
+/* NOTE: mapping event full decription to new lines use index as key to avoid unnecessary time complexity */
 
 import React from 'react';
 import PropTypes from 'prop-types';

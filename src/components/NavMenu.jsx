@@ -98,7 +98,7 @@ const NavMenu = () => {
         </ul>
       </li>
       <li>
-        <a>How you can help</a>
+        <a href="/#services">How you can help</a>
         <ul>
           <li>
             <a

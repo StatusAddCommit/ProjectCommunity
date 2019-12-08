@@ -1,7 +1,6 @@
 const messages = {
   home: {
     // Home-page slider banner image links/titles/subtitles/button title/button sub
-
     Banners: [
       {
         BannerImg: 'images/temp/slide-1.jpg',

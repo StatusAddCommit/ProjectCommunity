@@ -3,11 +3,7 @@
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": "error",
-    "no-unused-vars": "warn",
-    "no-console": ["error", { "allow": ["warn", "error", "info"] }],
-    "jsx-a11y/anchor-is-valid": "off",
-    "jsx-a11y/anchor-has-content": "off",
-    "jsx-a11y/control-has-associated-label": "off"
+    "no-console": ["error", { "allow": ["warn", "error", "info"] }]
   },
   "env": {
     "browser": true,

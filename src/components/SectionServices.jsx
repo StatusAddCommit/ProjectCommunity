@@ -4,7 +4,7 @@ import messages from '../constants/messages';
 const { home } = messages;
 
 const SectionServices = () => (
-  <section className="flex-container fly-services">
+  <section className="flex-container fly-services" id="services">
     <div className="fly-service">
       <div className="service-content">
         <i className="material-icons">{home.ServicesIcon1}</i>
