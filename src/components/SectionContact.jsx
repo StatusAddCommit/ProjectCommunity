@@ -3,6 +3,7 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
+import { red } from 'ansi-colors';
 
 const GOOGLE_FORM_NAME_ID = 'entry.171070047';
 const GOOGLE_FORM_EMAIL_ID = 'entry.165833056';
@@ -13,10 +14,11 @@ const GOOGLE_FORM_ACTION =
   'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdE8GugHCOwJid8mi7dkXFDsvAAx4KzVn1F7yOy_KW0Qtguqw/formResponse';
 
 const SectionContact = () => {
-  const [senderName, setName] = useState('(No Name Provided)');
-  const [senderEmail, setEmail] = useState('(No Email Provided)');
+  const [senderName, setName] = useState();
+  const [senderEmail, setEmail] = useState();
   const [senderSub, setSubject] = useState('(No Subject Provided)');
-  const [senderMessage, setMessage] = useState('(No Message Content)');
+  const [senderMessage, setMessage] = useState();
+  const [requiredFields, toggleRequiredWarn] = useState(false);
   const [formSubmit, setFormSubmit] = useState(false);
 
   const sendMessage = () => {
@@ -32,7 +34,7 @@ const SectionContact = () => {
         setFormSubmit(true);
         setTimeout(() => {
           setFormSubmit(false);
-        }, 6000);
+        }, 5000);
       })
       .catch(err => {
         console.error(err);
@@ -41,12 +43,17 @@ const SectionContact = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    sendMessage();
+    if (!senderMessage || !senderName || !senderEmail) {
+      toggleRequiredWarn(true);
+    } else {
+      toggleRequiredWarn(false);
+      sendMessage();
+    }
   };
 
   return formSubmit ? (
     <div className="section-heading">
-      <div className="container">
+      <div className="container fade-in">
         <br />
         <br />
         <br />
@@ -114,7 +121,7 @@ const SectionContact = () => {
               </div>
             </div>
             <div className="col-sm-4">
-              <div className="form-group required">
+              <div className="form-group">
                 <label htmlFor="your-subject">subject</label>
                 <br />
                 <span className="wpcf7-form-control-wrap your-subject">
@@ -150,6 +157,16 @@ const SectionContact = () => {
                 </span>
               </div>
               <div className="text-right">
+                {!requiredFields ? (
+                  <div />
+                ) : (
+                  <div>
+                    <i style={{ color: 'red', paddingBottom: '15px' }}><small>
+                      * Please fill out all required fields before submitting.
+                      </small>
+                    </i>
+                  </div>
+                )}
                 <input
                   type="submit"
                   defaultValue="Send Message"
