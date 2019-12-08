@@ -205,9 +205,9 @@ const messages = {
 
   social: {
     // Social media links
-    fb: 'https://facebook.com/',
-    ig: 'https://instagram.com/',
-    tw: 'https://twitter.com/'
+    fb: 'https://www.facebook.com/groups/581536265940134',
+    ig: 'https://www.instagram.com/ummacharitiesofficial/',
+    tw: 'https://twitter.com/UmmaCharities'
   },
 
   // 404 page banner background image

@@ -21,7 +21,11 @@ const About = () => (
       </div>
     </section>
     {!about.team[0].TeamMemberName ? <div /> : <AboutSectionTeam />}
-    <AboutMissionTimeline />
+    {!about.timelineContent[0].DescParagraph1 ? (
+      <div />
+    ) : (
+      <AboutMissionTimeline />
+    )}
     <Footer />
   </div>
 );
