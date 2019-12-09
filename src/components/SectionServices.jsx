@@ -4,7 +4,7 @@ import messages from '../constants/messages';
 const { home } = messages;
 
 const SectionServices = () => (
-  <section className="flex-container fly-services">
+  <section className="flex-container fly-services" id="services">
     <div className="fly-service">
       <div className="service-content">
         <i className="material-icons">{home.ServicesIcon1}</i>
@@ -12,7 +12,7 @@ const SectionServices = () => (
         <div className="description">{home.ServicesDesc1}</div>
       </div>
       <div className="service-buttons">
-        <a href="#" className="btn btn-medium js-wave">
+        <a href={home.ServicesLink1} className="btn btn-medium js-wave">
           {home.ServicesBtn1}
         </a>
       </div>
@@ -24,7 +24,7 @@ const SectionServices = () => (
         <div className="description">{home.ServicesDesc2}</div>
       </div>
       <div className="service-buttons">
-        <a href="#" className="btn btn-medium js-wave">
+        <a href={home.ServicesLink2} className="btn btn-medium js-wave">
           {home.ServicesBtn2}
         </a>
       </div>
@@ -36,7 +36,7 @@ const SectionServices = () => (
         <div className="description">{home.ServicesDesc3}</div>
       </div>
       <div className="service-buttons">
-        <a href="#" className="btn btn-medium js-wave">
+        <a href={home.ServicesLink3} className="btn btn-medium js-wave">
           {home.ServicesBtn3}
         </a>
       </div>
@@ -48,7 +48,7 @@ const SectionServices = () => (
         <div className="description">{home.ServicesDesc4}</div>
       </div>
       <div className="service-buttons">
-        <a href="#" className="btn btn-medium js-wave">
+        <a href={home.ServicesLink4} className="btn btn-medium js-wave">
           {home.ServicesBtn4}
         </a>
       </div>

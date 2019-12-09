@@ -1,21 +1,34 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import messages from '../../constants/messages';
 
-/* TODO: replace remaining static data with live API data */
+const {
+  eventdetails: { DetailsBannerImg }
+} = messages;
 
-const DetailsBanner = () => (
+const DetailsBanner = ({ event }) => (
   <section
     className="fly-header parallax overlay"
     style={{
-      backgroundImage: 'url(images/temp/slide-16.jpg)'
+      backgroundImage: `url(${DetailsBannerImg})`
     }}
   >
     <div className="fly-header-content">
       <div className="page-subtitle">Event Details</div>
       <h1 id="projectTitle1" className="page-title" itemProp="title">
-        Here Goes the Event Title
+        {event[0]}
       </h1>
     </div>
   </section>
 );
 
-export default DetailsBanner;
+const mapStateToProps = state => ({
+  events: state.events
+});
+
+DetailsBanner.propTypes = {
+  event: PropTypes.arrayOf(PropTypes.any).isRequired
+};
+
+export default connect(mapStateToProps)(DetailsBanner);

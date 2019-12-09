@@ -1,58 +1,38 @@
+/* eslint-disable */
+
 import React from 'react';
+import messages from '../../constants/messages';
 
-/* TODO: replace all remaining static data with data from constants/messages.js */
-const AboutTimelineItem = () => (
-  <div className="timeline-item">
-    <div className="date">
-      <span>January</span>
-      <strong>2017</strong>
-    </div>
-    <h2 className="title-styled">Duis autem vel eum iriure dolor</h2>
-    <div className="description">
-      <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-        aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-        est Lorem ipsum dolor sit amet.
-      </p>
-    </div>
-    <div className="collapse" id="toggle1">
-      <div className="description">
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-          amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-          amet.
-        </p>
+const {
+  about: { timelineContent }
+} = messages;
+
+const AboutTimelineItem = () =>
+  timelineContent.map((e, i) => (
+    <div className="timeline-item" key={e.Month + e.Year}>
+      <div className="date">
+        <span>{e.Month}</span>
+        <strong>{e.Year}</strong>
       </div>
-    </div>
-    <a
-      className="collapsed description-toggle"
-      data-toggle="collapse"
-      href="#toggle1"
-      data-hidden="Show More"
-      data-shown="Show Less"
-    />
-  </div>
-);
+      <h2 className="title-styled">{e.Title}</h2>
+      <div className="description">
+        <p>{e.DescParagraph1}</p>
+      </div>
 
+      <div className="collapse" id={`about${i}`}>
+        <div className="description">
+          <p>{e.DescRest}</p>
+        </div>
+      </div>
+      {e.DescRest && (
+        <a
+          className="collapsed description-toggle"
+          data-toggle="collapse"
+          href={`#about${i}`}
+          data-hidden="Show More"
+          data-shown="Show Less"
+        />
+      )}
+    </div>
+  ));
 export default AboutTimelineItem;

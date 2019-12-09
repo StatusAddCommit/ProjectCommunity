@@ -1,14 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import generalJs from '../../helpers/general';
+
 import EventsBanner from './EventsBanner';
 import EventsSection from './EventsSection';
 import Footer from '../Footer';
 
-const Events = () => (
-  <div>
-    <EventsBanner />
-    <EventsSection />
-    <Footer />
-  </div>
-);
+const Events = ({ events }) => {
+  useEffect(() => {
+    generalJs();
+  });
 
-export default Events;
+  return (
+    <div>
+      <EventsBanner />
+      <EventsSection events={events} />
+      <Footer />
+    </div>
+  );
+};
+
+const mapStateToProps = state => ({
+  events: state.events
+});
+
+Events.propTypes = {
+  events: PropTypes.arrayOf(PropTypes.array).isRequired
+};
+
+export default connect(mapStateToProps)(Events);

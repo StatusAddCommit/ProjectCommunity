@@ -20,8 +20,12 @@ const About = () => (
         <div className="page-subtitle">{about.BannerSub}</div>
       </div>
     </section>
-    <AboutSectionTeam />
-    <AboutMissionTimeline />
+    {!about.team[0].TeamMemberName ? <div /> : <AboutSectionTeam />}
+    {!about.timelineContent[0].DescParagraph1 ? (
+      <div />
+    ) : (
+      <AboutMissionTimeline />
+    )}
     <Footer />
   </div>
 );

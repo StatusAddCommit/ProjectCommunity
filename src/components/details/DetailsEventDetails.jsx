@@ -1,31 +1,27 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import DetailsGallery from './DetailsGallery';
 import DetailsInfoBox from './DetailsInfoBox';
 import DetailsContent from './DetailsContent';
 
-/* TODO: replace social media links after accounts are created */
-const DetailsEventDetails = () => (
+const DetailsEventDetails = ({ event }) => (
   <article
     className="fly-article-details"
     itemScope
     itemType="http://schema.org/DonateAction"
     itemRef="projectTitle1"
   >
-    <DetailsGallery />
-    <DetailsInfoBox />
-    <DetailsContent />
-    <ul className="post-social clearfix">
-      <li>
-        <a href="#" className="fa fa-facebook js-wave" />
-      </li>
-      <li>
-        <a href="#" className="fa fa-twitter js-wave" />
-      </li>
-      <li>
-        <a href="#" className="fa fa-instagram js-wave" />
-      </li>
-    </ul>
+    <DetailsGallery eImgs={!event[2] ? [['']] : event[2].split(',')} />
+    <br />
+    <br />
+    <DetailsInfoBox event={event} />
+    <DetailsContent event={event} />
   </article>
 );
+
+DetailsEventDetails.propTypes = {
+  event: PropTypes.arrayOf(PropTypes.any).isRequired
+};
 
 export default DetailsEventDetails;
