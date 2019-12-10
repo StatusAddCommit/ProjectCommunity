@@ -5,7 +5,6 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import allReducers from './reducers';
-// import getData from './actions/get-data';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -16,12 +15,7 @@ import Events from './components/events/Events';
 import Details from './components/details/Details';
 import Header from './components/Header';
 
-const { __REDUX_DEVTOOLS_EXTENSION__: REDUX_DEVTOOLS } = window;
-
-const composedEnhancers = compose(
-  applyMiddleware(thunk),
-  REDUX_DEVTOOLS && REDUX_DEVTOOLS()
-);
+const composedEnhancers = compose(applyMiddleware(thunk));
 
 const store = createStore(allReducers, composedEnhancers);
 
