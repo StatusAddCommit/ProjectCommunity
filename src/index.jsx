@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
-import { createStore, applyMiddleware, compose } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import allReducers from './reducers';
@@ -15,9 +15,7 @@ import Events from './components/events/Events';
 import Details from './components/details/Details';
 import Header from './components/Header';
 
-const composedEnhancers = compose(applyMiddleware(thunk));
-
-const store = createStore(allReducers, composedEnhancers);
+const store = createStore(allReducers, applyMiddleware(thunk));
 
 const routing = (
   <Provider store={store}>
