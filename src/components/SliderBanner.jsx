@@ -24,10 +24,15 @@ const SliderBanner = () => (
             <h1 className="page-title">{b.BannerTitle}</h1>
             <div className="page-subtitle">{b.BannerSub}</div>
             <div className="volunteer-cta">
-              <a href={b.BannerUrl} className="btn btn-large btn-icon js-wave">
-                <i className="material-icons">arrow_forward</i>
-                {b.BannerBtn}
-              </a>
+              {b.BannerBtn && (
+                <a
+                  href={b.BannerUrl}
+                  className="btn btn-large btn-icon js-wave"
+                >
+                  <i className="material-icons">arrow_forward</i>
+                  {b.BannerBtn}
+                </a>
+              )}
               <div className="note">{b.BannerBtnSub}</div>
             </div>
           </div>
