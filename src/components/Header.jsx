@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -28,16 +26,19 @@ const Header = props => {
         data-no-placeholder
       >
         <div className="container">
-          <div className="hamburger">
-            <a href={null} />
-          </div>
+          <div className="hamburger">{/* <a href={null} /> */}</div>
           <div className="navigation-bar-flex">
-            <div className="logo">
+            <span className="logo">
+              <img
+                style={{ display: 'inline-flex', background: 'transparent' }}
+                src="images/logo.jpg"
+                alt="My logo"
+              />
               <a href="/">
                 Umma
                 <span>Charities</span>
               </a>
-            </div>
+            </span>
             <NavMenu />
           </div>
         </div>

@@ -3,7 +3,15 @@ const messages = {
     // Home-page slider banner image links/titles/subtitles/button title/button sub
     Banners: [
       {
-        BannerImg: 'images/temp/slide-1.jpg',
+        BannerImg: 'images/interfaithConference.png',
+        BannerTitle: 'Giving And Forgiving',
+        BannerSub: 'An interfaith conference on compassion and reconciliation',
+        BannerBtn: 'REGISTER TODAY',
+        BannerBtnSub: 'Sat March 21st 9am-4pm',
+        BannerUrl: ''
+      },
+      {
+        BannerImg: 'images/helpingHands.jpeg',
         BannerTitle: 'Uniting the Merciful Nature of Our Shared Humanity',
         BannerSub: 'Choose a way to help people in need',
         BannerBtn: 'BECOME A VOLUNTEER TODAY',
@@ -12,31 +20,29 @@ const messages = {
       },
 
       {
-        BannerImg: 'images/temp/slide-2.jpg',
+        BannerImg: 'images/happyChildren.jpeg',
         BannerTitle: 'Mobilizing Our Compassion for Action',
         BannerSub: 'Choose a way to help people in need',
         BannerBtn: 'MAKE A DONATION TODAY',
         BannerBtnSub: 'secure payments',
         BannerUrl: 'https://www.gofundme.com/f/98xst6-passion-for-compassion'
-      },
-
-      {
-        BannerImg: 'images/temp/slide-3.jpg',
-        BannerTitle: 'Helping Hands for Everyone',
-        BannerSub: 'Choose a way to help people in need',
-        BannerBtn: 'BECOME A VOLUNTEER TODAY',
-        BannerBtnSub: 'make a difference',
-        BannerUrl: 'https://forms.gle/MPxMTt9YGE2sG83m9'
-      },
-
-      {
-        BannerImg: 'images/temp/slide-4.jpg',
-        BannerTitle: 'Helping Hands for Everyone',
-        BannerSub: 'Choose a way to help people in need',
-        BannerBtn: 'MAKE A DONATION TODAY',
-        BannerBtnSub: 'secure payments',
-        BannerUrl: 'https://www.gofundme.com/f/98xst6-passion-for-compassion'
       }
+      // {
+      //   BannerImg: 'images/temp/slide-3.jpg',
+      //   BannerTitle: 'Helping Hands for Everyone',
+      //   BannerSub: 'Choose a way to help people in need',
+      //   BannerBtn: 'BECOME A VOLUNTEER TODAY',
+      //   BannerBtnSub: 'make a difference',
+      //   BannerUrl: 'https://forms.gle/MPxMTt9YGE2sG83m9'
+      // },
+      // {
+      //   BannerImg: 'images/temp/slide-4.jpg',
+      //   BannerTitle: 'Helping Hands for Everyone',
+      //   BannerSub: 'Choose a way to help people in need',
+      //   BannerBtn: 'MAKE A DONATION TODAY',
+      //   BannerBtnSub: 'secure payments',
+      //   BannerUrl: 'https://www.gofundme.com/f/98xst6-passion-for-compassion'
+      // }
     ],
 
     // SectionServices material icons/links
